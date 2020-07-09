@@ -7,8 +7,7 @@ import Button from '../../layout/button/button'
 function Banner() {
   return (
     <div>
-      Banner
-      <Title />
+      <Title slogan="Bienvenido a" title="El Patio International"/>
       <Button />
       <Button />
 

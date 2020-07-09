@@ -8,8 +8,7 @@ import Stars from '../../layout/stars/stars'
 function TrueCuisine() {
   return (
     <div>
-      TrueCuisine
-      <Title />
+      <Title slogan="Bienvenido a" title="true argentine cuisine"/>
       <Stars />
       
 

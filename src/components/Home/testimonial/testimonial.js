@@ -6,8 +6,8 @@ import Title from '../../layout/title/title'
 function Testimonial() {
   return (
     <div>
-      Testimonial
-      <Title />
+      <Title slogan="¡Amamos a nuestros huéspedes!" title="Your testimonials"/>
+
       
 
     </div>

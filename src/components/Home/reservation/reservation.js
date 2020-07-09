@@ -8,8 +8,7 @@ import Stars from '../../layout/stars/stars'
 function Reservation() {
   return (
     <div>
-      Reservation
-      <Title />
+      <Title slogan="Reserva" title="Book a table"/>
       <Stars />
       <Button />
 

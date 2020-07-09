@@ -7,8 +7,7 @@ import Stars from '../../layout/stars/stars'
 function UniqueCombination() {
   return (
     <div>
-      UniqueCombination
-      <Title />
+      <Title slogan="Disfruta de la" title="Unique combination"/>
       <Stars />
       
 

@@ -9,8 +9,7 @@ import Dish from './dish/dish'
 function PopularDishes() {
   return (
     <div>
-      PopularDishes
-      <Title />
+      <Title slogan="Prueba nuestros" title="popular dishes"/>
       <Stars />
       <Dish />
       <Dish />
