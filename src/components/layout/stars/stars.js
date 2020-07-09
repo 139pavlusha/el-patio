@@ -1,11 +1,17 @@
 import React from 'react';
 import './stars.scss';
+import star from '../stars/images/Star.png';
+
 
 function Stars() {
     
   return (
-    <div>
-      Stars
+    <div className="star">
+      <img src={star} alt="star" className="star__item" />
+      <img src={star} alt="star" className="star__item" />
+      <img src={star} alt="star" className="star__item" />
+      <img src={star} alt="star" className="star__item" />
+      <img src={star} alt="star" className="star__item" />
     </div>
   );
 }
