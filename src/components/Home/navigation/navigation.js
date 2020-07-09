@@ -1,7 +1,7 @@
 import React from 'react';
 import './navigation.scss';
 
-function Navigation() {
+const Navigation = () => {
   return (
     <div className="navigation">
       <ul className="navigation__list">

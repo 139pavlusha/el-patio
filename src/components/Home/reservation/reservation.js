@@ -15,7 +15,7 @@ function Reservation() {
       <Description 
         desc="We provide ample parking and conveniently located on Loehmann's Plaza. the closest metro station is Twinbrook. We also provide catering services, corporate lunches and barbecues"
       />
-      <Button />
+      <Button button="make a reservation" />
 
     </div>
   );

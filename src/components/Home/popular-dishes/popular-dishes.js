@@ -19,7 +19,7 @@ function PopularDishes() {
       <Dish />
       <Dish />
       <Dish />
-      <Button />      
+      <Button button="open the full menu" />    
 
     </div>
   );
