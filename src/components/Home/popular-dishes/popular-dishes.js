@@ -1,0 +1,29 @@
+import React from 'react';
+import './popular-dishes.scss';
+
+import Title from '../../layout/title/title'
+import Button from '../../layout/button/button'
+import Stars from '../../layout/stars/stars'
+import Dish from './dish/dish'
+
+function PopularDishes() {
+  return (
+    <div>
+      PopularDishes
+      <Title />
+      <Stars />
+      <Dish />
+      <Dish />
+      <Dish />
+      <Dish />
+      <Dish />
+      <Dish />
+      <Dish />
+      <Dish />
+      <Button />      
+
+    </div>
+  );
+}
+
+export default PopularDishes;
