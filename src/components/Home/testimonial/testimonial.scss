@@ -1,0 +1,108 @@
+.testimonials {
+    margin-top: 100px;
+    background-color: white;
+
+    &__title {
+        font-size: 60px;
+        text-align: center;
+        color: #F8AB11;
+    }
+
+    &__subtitle {
+        font-size: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #706E6E;
+        margin-bottom: 40px;
+    }
+}
+
+.review {
+    width: 500px;
+    margin: 50px auto;
+
+    &__item {
+        width: 100%;
+        display: flex;
+    }
+
+    &__avatar {
+        margin-left: 80px;
+        width: 100px;
+    }
+
+    &__info {
+        width: 100%;
+    }
+
+    &__name {
+        margin-top: 5px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+        color: #F8AB11;
+    }
+
+    &__stars {
+        width: 125px;
+        margin: 0 auto;
+        margin-top: 10px;
+        display: flex;
+
+    }
+
+    &__star {
+        width: 20px;
+        margin-right: 5px;
+    }
+
+    &__text {
+        font-family: 'Josefin Sans', sans-serif;
+        margin-top: 20px;
+        font-size: 16px;
+        text-align: center;
+        color: #706E6E;
+    }
+}
+
+.content {
+    margin: 0 auto;
+    width: 500px;
+    margin-bottom: 50px;
+}
+
+// .slides .slick-prev,
+// .slides .slick-next {
+//     position: absolute;
+//     top: 50%;
+//     z-index:1;
+// }
+
+.showFormButton {
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial {
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__item {
+        width: 600px;
+        height: 40px;
+        margin-bottom: 20px;
+        outline: 1px black solid;
+
+        &--big {
+            height: 150px;
+            padding: 10px;
+        }
+
+        &--stars {
+            width: 400px;
+        }
+    }
+}
