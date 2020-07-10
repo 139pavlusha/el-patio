@@ -1,0 +1,110 @@
+.choose-event {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #706E6E;
+  
+  & a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 30px;
+    
+    &:hover > * {
+      color: #F8AB11;
+    }
+  }
+
+  &__title {
+    padding: 60px 0 100px;
+  }
+
+  &__list {
+    width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media (max-width: 1600px) {
+      width: 1000px;
+    }
+  }
+  
+  &__item {
+    width: 400px;
+    height: 530px;
+    background-size: cover;
+    position: relative;
+    z-index: -2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #09090940;
+      z-index: -1;
+    }
+    
+    @media (max-width: 1600px) {
+      width: 300px;
+      height: 400px;
+    }
+
+    &--corp {
+      background: url(../choose-event/corporate.png) no-repeat top center;
+    }
+
+    &--bbq {
+      background: url(../choose-event/bbq.png) no-repeat top center;
+      margin-top: 20px;
+    }
+
+    &--wed {
+      background: url(../choose-event/wedding.png) no-repeat top center;
+      margin-top: 40px;
+    }
+
+    &--birthday {
+      background: url(../choose-event/birthday.png) no-repeat top center;
+    }
+
+    &--party {
+      background: url(../choose-event/party.png) no-repeat top center;
+      margin-top: 20px;
+    }
+
+    &--other {
+      background: url(../choose-event/other.png) no-repeat top center;
+      margin-top: 40px;
+    }
+  }
+  
+  &__progress {
+    width: 325px;
+    height: 20px;
+    border-radius: 10px/50%;
+    background: #FCDDA0;
+    position: relative;
+    margin: 20px 0 70px;
+
+    &::after {
+      content: '';
+      width: 20%;
+      height: 20px;
+      background: #F8AB11;
+      border-radius: 10px/50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+

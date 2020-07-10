@@ -1,0 +1,32 @@
+.event {
+  width: 88%;
+  height: 85%;
+  border: solid 2px #ffffff;
+  color: inherit;
+  z-index: 0;
+  background: #09090940;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 1600px) {
+    width: 85%;
+    height: 82%;
+    border: solid 1px #ffffff;
+  }
+
+  &__title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+
+    @media (max-width: 1600px) {
+      font-size: 35px;
+      line-height: 35px;
+    }
+  }
+}

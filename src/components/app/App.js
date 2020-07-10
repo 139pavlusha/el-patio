@@ -11,6 +11,14 @@ import Reservation from '../Home/reservation/reservation';
 import Testimonial from '../Home/testimonial/testimonial';
 import Footer from '../Home/footer/footer';
 
+import CateringBanner from '../Catering/banner/banner';
+import PorQue from '../Catering/por-que/por-que';
+import ChooseEvent from '../Catering/choose-event/choose-event';
+
+
+
+// import MenuBanner from '../Menu/banner/banner';
+
 
 
 
@@ -23,7 +31,6 @@ function App() {
   return (
     <div className="App">
       <Navigation />
-        <hr></hr>
       <Banner />
         <hr></hr>
       <TrueCuisine />
@@ -37,6 +44,12 @@ function App() {
       <Testimonial />
       <hr></hr>
       <Footer />
+      <hr></hr>
+      <CateringBanner />
+      <ChooseEvent />
+      <PorQue />
+      <hr></hr>
+      {/* <MenuBanner /> */}
     </div>
   );
 }
