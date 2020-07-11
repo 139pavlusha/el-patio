@@ -1,154 +1,484 @@
- 
- const dishes = [{
-    id: 1,
+export default [
+
+  {
+    id: 1, 
+    popularDishes: false,
+    dishName: 'Simples de Jamon y Queso',
+    dishDesc: 'Frios o Tostados',
+    picture: '#',
+    price: {
+      regular: 3.95,
+      large: 10.60
+    },
+    dishFor: "Lunch",
+    dishType: "Sandwiches"
+  },
+   {
+    id: 2, 
+    popularDishes: true,
     dishName: 'Triples Surtidos',
     dishDesc: 'Sandwich with assorted fillings',
-    picture: '',
-    price: 4.60,
-    dishType: "Lunch"
-  },
-  {
-    id: 2,
-    dishName: 'Lomito',
-    dishDesc: 'Grilled steak with Tomato, Onions, Lettuce, Mayo',
-    picture: '',
-    price: 7.95,
-    dishType: "Lunch"
+    picture: '#',
+    price: {
+      regular: 4.60,
+      large: 11.90
+    },
+    dishFor: "Lunch",
+    dishType: "Sandwiches"
   },
   {
     id: 3,
-    dishName: 'Choripan',
-    dishDesc: 'Argentine Sausage on a Homemade Baugette',
-    picture: '',
-    price: 3.55,
-    dishType: "Lunch"
+    popularDishes: true,
+    dishName: 'Lomito',
+    dishDesc: 'Grilled steak with Tomato, Onions, Lettuce, Mayo',
+    picture: '#',
+    price: {
+      regular: 7.95,
+      large: ''
+    },
+    dishFor: "Lunch",
+    dishType: "Sandwiches"
   },
   {
     id: 4,
-    dishName: 'medialuna rellena',
-    dishDesc: 'Croissant with Egg, melted Cheese&Ham',
-    picture: '',
-    price: 4.60,
-    dishType: "Lunch"
+    popularDishes: false,
+    dishName: 'Lomito Recoleta',
+    dishDesc: 'Grilled NY steak, Mayo, lettuce, tomato, onions',
+    picture: '#',
+    price: {
+      regular: 12.60,
+      large: ''
+    },
+    dishFor: "Lunch",
+    dishType: "Sandwiches"
   },
   {
     id: 5,
-    dishName: 'omelette de huevo, jamon y queso',
-    dishDesc: 'Eggs, Ham&Cheese Omelet',
-    picture: '',
-    price: 4.95,
-    dishType: "Lunch"
+    popularDishes: false,
+    dishName: 'Milanesa (Carne)/Suprema (Pollo)',
+    dishDesc: 'Breaded steak or chicken fried, Mayo, lettuce, tomato, onions',
+    picture: '#',
+    price: {
+      regular: 7.95,
+      large: 9.90
+    },
+    dishFor: "Lunch",
+    dishType: "Sandwiches"
   },
   {
     id: 6,
-    dishName: 'revuelto de salchicha',
-    dishDesc: 'Sausage Omelet - Eggs, Sausages, Tomatoes& Fries',
-    picture: '',
-    price: 5.95,
-    dishType: "Lunch"
+    popularDishes: false,
+    dishName: 'Hamburguesa',
+    dishDesc: 'Grilled hamburger, Mayo, lettuce, tomato, onions',
+    picture: '#',
+    price: {
+      regular: 6.85,
+      large: ''
+    },
+    dishFor: "Lunch",
+    dishType: "Sandwiches"
   },
   {
     id: 7,
-    dishName: 'Empanada de carne',
-    dishDesc: 'Emapanada with Beef, Onions, Olives&Egg',
-    picture: '',
-    price: 1.80,
-    dishType: "Lunch"
+    popularDishes: true,
+    dishName: 'Choripan',
+    dishDesc: 'Argentine Sausage on a Homemade Baugette',
+    picture: '#',
+    price: {
+      regular: 3.55,
+      large: ''
+    },
+    dishFor: "Lunch",
+    dishType: "Sandwiches"
   },
   {
     id: 8,
-    dishName: 'ensalada de pollo',
-    dishDesc: 'Grilled Chicken salad, Tomatoes, Letucce&Onions',
-    picture: '',
-    price: 4.60,
-    dishType: "Lunch"
+    popularDishes: true,
+    dishName: 'Medialuna rellena',
+    dishDesc: 'Croissant with Egg, melted Cheese&Ham',
+    picture: '#',
+    price: {
+      regular: 4.60,
+      large: ''
+    },
+    dishFor: "Lunch",
+    dishType: "Sandwiches"
   },
   {
     id: 9,
-    dishName: 'Gazpacho',
-    dishDesc: 'Chilled tomato soup with peppers, cucumbers, garlic, and herbs',
-    picture: '',
-    price: 9.60,
-    dishType: "Dinner"
+    popularDishes: false,
+    dishName: 'Jamon Crudo y Queso',
+    dishDesc: 'Prosciutto & cheese sandwish',
+    picture: '#',
+    price: {
+      regular: 6.95,
+      large: ''
+    },
+    dishFor: "Lunch",
+    dishType: "Sandwiches"
   },
   {
     id: 10,
-    dishName: 'Pisto',
-    dishDesc: 'Tomatoes, peppers, zucchini, onions, and garlic roasted with a olive oil',
-    picture: '',
-    price: 8.90,
-    dishType: "Dinner"
+    popularDishes: false,
+    dishName: 'Chivito',
+    dishDesc: 'Rib Eye steak in a soft  bun with bacon, ham, mozzarella, sauteed bell peppers, onion, lettuce, tomato, olives, hard boiled egg, Mayo',
+    picture: '#',
+    price: {
+      regular: 12.60,
+      large: ''
+    },
+    dishFor: "Lunch",
+    dishType: "Sandwiches"
   },
   {
     id: 11,
-    dishName: 'Pulpo a la gallega',
-    dishDesc: 'Paprika, rock salt, and olive oil served on sliced potatoes',
-    picture: '',
-    price: 11.90,
-    dishType: "Dinner"
+    popularDishes: false,
+    dishName: 'De queso manchego',
+    dishDesc: 'Bocadillo de queso manchego',
+    picture: '#',
+    price: {
+      regular: 7.25,
+      large: ''
+    },
+    dishFor: "Lunch",
+    dishType: "Sandwiches"
   },
   {
     id: 12,
-    dishName: 'Fabada',
-    dishDesc: 'Bean stew with spicy meats, including chorizo, morcilla',
-    picture: '',
-    price: 9.30,
-    dishType: "Dinner"
+    popularDishes: false,
+    dishName: 'Bocadillo de calamares',
+    dishDesc: 'Bocadillo de calamares fritos en una masa ligera con la menor cantidad de grasa',
+    picture: '#',
+    price: {
+      regular: 8.65,
+      large: ''
+    },
+    dishFor: "Lunch",
+    dishType: "Sandwiches"
   },
   {
     id: 13,
-    dishName: 'Paella',
-    dishDesc: 'Seafood with rice',
-    picture: '',
-    price: 12.90,
-    dishType: "Dinner"
+    popularDishes: true,
+    dishName: 'Omelette de huevo, jamon y queso',
+    dishDesc: 'Eggs, Ham&Cheese Omelet',
+    picture: '#',
+    price: {
+      regular: 4.95,
+      large: ''
+    },
+    dishFor: "Lunch",
+    dishType: "Breakfasts"
   },
   {
     id: 14,
-    dishName: 'Patatas bravas',
-    dishDesc: 'Cubed potatoes fried in oil and served warm with spicy sauce',
-    picture: '',
-    price: 8.70,
-    dishType: "Dinner"
+    popularDishes: true,
+    dishName: 'Revuelto de salchicha',
+    dishDesc: 'Sausage Omelet - Eggs, Sausages, Tomatoes& Fries',
+    picture: '#',
+    price: {
+      regular: 5.95,
+      large: ''
+    },
+    dishFor: "Lunch",
+    dishType: "Breakfasts"
   },
   {
     id: 15,
-    dishName: 'Leche frita',
-    dishDesc: 'Fried milk pudding dusted with sugar and cinnamon',
-    picture: '',
-    price: 8.20,
-    dishType: "Dinner"
+    popularDishes: false,
+    dishName: 'Tortilla',
+    dishDesc: 'Tortilla con papas y cebollas',
+    picture: '#',
+    price: {
+      regular: 3.95,
+      large: 6.20
+    },
+    dishFor: "Lunch",
+    dishType: "Breakfasts"
   },
   {
     id: 16,
-    dishName: 'Tortilla Española',
-    dishDesc: 'Slowly fried up onions and potatoes in olive oil with egg',
-    picture: '',
-    price: 7.90,
-    dishType: "Dinner"
+    popularDishes: false,
+    dishName: 'Harina de avena',
+    dishDesc: 'Avena con manzana y caramelo salado',
+    picture: '#',
+    price: {
+      regular: 3.40,
+      large: ''
+    },
+    dishFor: "Lunch",
+    dishType: "Breakfasts"
   },
   {
     id: 17,
+    popularDishes: false,
+    dishName: 'Cazuela',
+    dishDesc: 'Cazuela de requesón con ralladura de naranja y nueces',
+    picture: '#',
+    price: {
+      regular: 5.25,
+      large: ''
+    },
+    dishFor: "Lunch",
+    dishType: "Breakfasts"
+  },
+  {
+    id: 18,
+    popularDishes: false,
+    dishName: 'Frittata con verduras',
+    dishDesc: 'Tortilla al horno con verduras',
+    picture: '#',
+    price: {
+      regular: 4.70,
+      large: ''
+    },
+    dishFor: "Lunch",
+    dishType: "Breakfasts"
+  },
+  {
+    id: 19,
+    popularDishes: false,
+    dishName: 'Torrijas',
+    dishDesc: 'Crutones empapados en leche con canela y ralladura de limón',
+    picture: '#',
+    price: {
+      regular: 3.10,
+      large: 5.80
+    },
+    dishFor: "Lunch",
+    dishType: "Breakfasts"
+  },
+  {
+    id: 20,
+    popularDishes: false,
+    dishName: 'Huevos españoles',
+    dishDesc: 'Un plato sustancioso, aromático y muy sabroso, que contiene todos sus productos españoles favoritos',
+    picture: '#',
+    price: {
+      regular: 4.60,
+      large: 10.40
+    },
+    dishFor: "Lunch",
+    dishType: "Breakfasts"
+  },
+  {
+    id: 21,
+    popularDishes: false,
+    dishName: 'Pan con tomate',
+    dishDesc: ' Es una barra de pan espolvoreado con tomate picado, sal y pimienta y espolvoreado con aceite de oliva. ',
+    picture: '#',
+    price: {
+      regular: 4.30,
+      large: ''
+    },
+    dishFor: "Lunch",
+    dishType: "Breakfasts"
+  },
+  {
+    id: 21,
+    popularDishes: false,
+    dishName: 'Сrepes',
+    dishDesc: ' Un panqueque cerrado con queso, huevo y espinacas! ',
+    picture: '#',
+    price: {
+      regular: 4.70,
+      large: ''
+    },
+    dishFor: "Lunch",
+    dishType: "Breakfasts"
+  },{
+    id: 23,
+    popularDishes: true,
+    dishName: 'Empanada de carne',
+    dishDesc: 'Emapanada with Beef, Onions, Olives&Egg',
+    picture: '#',
+    price: {
+      regular: 1.80,
+      large: 4.80
+    },
+    dishFor: "Lunch",
+    dishType: "Main Courses"
+  },
+  {
+    id: 24,
+    popularDishes: true,
+    dishName: 'Ensalada de pollo',
+    dishDesc: 'Grilled Chicken salad, Tomatoes, Letucce&Onions',
+    picture: '#',
+    price: {
+      regular: 4.60,
+      large: ''
+    },
+    dishFor: "Lunch",
+    dishType: "Main Courses"
+  },
+
+
+
+
+
+
+
+  {
+    id: 61,
+    popularDishes: false,
+    dishName: 'Polo a la plancha',
+    dishDesc: 'Grilled chicken fried, Mayo, lettuce, tomato, onions',
+    picture: '#',
+    price: {
+      regular: 7.40,
+      large: 8.75
+    },
+    dishFor: "Lunch",
+    dishType: "Grill"
+  },
+
+
+
+
+
+
+  
+  {
+    id: 9,
+    popularDishes: true,
+    dishName: 'Gazpacho',
+    dishDesc: 'Chilled tomato soup with peppers, cucumbers, garlic, and herbs',
+    picture: '',
+    price: {
+      regular: 9.60,
+      large: ''
+    },
+    dishFor: "Dinner",
+    dishType: ""
+  },
+  {
+    id: 10,
+    popularDishes: true,
+    dishName: 'Pisto',
+    dishDesc: 'Tomatoes, peppers, zucchini, onions, and garlic roasted with a olive oil',
+    picture: '',
+    price: {
+      regular: 8.90,
+      large: ''
+    },
+    dishFor: "Dinner",
+    dishType: ""
+  },
+  {
+    id: 11,
+    popularDishes: true,
+    dishName: 'Pulpo a la gallega',
+    dishDesc: 'Paprika, rock salt, and olive oil served on sliced potatoes',
+    picture: '',
+    price: {
+      regular: 11.90,
+      large: ''
+    },
+    dishFor: "Dinner",
+    dishType: ""
+  },
+  {
+    id: 12,
+    popularDishes: true,
+    dishName: 'Fabada',
+    dishDesc: 'Bean stew with spicy meats, including chorizo, morcilla',
+    picture: '',
+    price: {
+      regular: 9.30,
+      large: ''
+    },
+    dishFor: "Dinner",
+    dishType: ""
+  },
+  {
+    id: 13,
+    popularDishes: true,
+    dishName: 'Paella',
+    dishDesc: 'Seafood with rice',
+    picture: '',
+    price: {
+      regular: 12.90,
+      large: ''
+    },
+    dishFor: "Dinner",
+    dishType: ""
+  },
+  {
+    id: 14,
+    popularDishes: true,
+    dishName: 'Patatas bravas',
+    dishDesc: 'Cubed potatoes fried in oil and served warm with spicy sauce',
+    picture: '',
+    price: {
+      regular: 8.70,
+      large: ''
+    },
+    dishFor: "Dinner",
+    dishType: ""
+  },
+  {
+    id: 15,
+    popularDishes: true,
+    dishName: 'Leche frita',
+    dishDesc: 'Fried milk pudding dusted with sugar and cinnamon',
+    picture: '',
+    price: {
+      regular: 8.20,
+      large: ''
+    },
+    dishFor: "Dinner",
+    dishType: ""
+  },
+  {
+    id: 16,
+    popularDishes: true,
+    dishName: 'Tortilla Española',
+    dishDesc: 'Slowly fried up onions and potatoes in olive oil with egg',
+    picture: '',
+    price: {
+      regular: 7.90,
+      large: ''
+    },
+    dishFor: "Dinner",
+    dishType: ""
+  },
+  {
+    id: 17,
+    popularDishes: false,
     dishName: 'Acantus Tinto',
     dishDesc: 'Cabernet Sauvignon, Tempranillo, 100g;',
     picture: '',
-    price: 3.90,
-    dishType: "Wine"
+    price: {
+      regular: 3.90,
+      large: ''
+    },
+    dishFor: "Wine",
+    dishType: ""
   },
   {
     id: 18,
+    popularDishes: false,
     dishName: 'Borsao ROSADO',
     dishDesc: 'Garnacha, 100g;',
     picture: '',
-    price: 3.70,
-    dishType: "Wine"
+    price: {
+      regular: 3.70,
+      large: ''
+    },
+    dishFor: "Wine",
+    dishType: ""
   },
   {
     id: 18,
+    popularDishes: false,
     dishName: 'Castillo San Simón',
     dishDesc: 'Chardonnay, 100g;',
     picture: '',
-    price: 3.80,
-    dishType: "Wine"
+    price: {
+      regular: 3.80,
+      large: ''
+    },
+    dishFor: "Wine",
+    dishType: ""
   },
 ]           
