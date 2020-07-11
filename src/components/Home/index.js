@@ -1,4 +1,5 @@
 import React from 'react';
+import './index.scss'
 
 import Banner from '../Home/banner/banner';
 import TrueCuisine from '../Home/true-cuisine/true-cuisine';

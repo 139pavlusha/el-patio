@@ -1,6 +1,7 @@
 .testimonials {
-    margin-top: 100px;
+    padding: 100px 0;
     background-color: white;
+    color: #706E6E;
 
     &__title {
         font-size: 60px;
@@ -18,7 +19,7 @@
 }
 
 .review {
-    width: 500px;
+    width: 600px;
     margin: 50px auto;
 
     &__item {
@@ -33,6 +34,10 @@
 
     &__info {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     &__name {
@@ -43,41 +48,34 @@
         color: #F8AB11;
     }
 
-    &__stars {
-        width: 125px;
+    & .star {
+        width: 200px;
+        height: 25px;
         margin: 0 auto;
         margin-top: 10px;
         display: flex;
-
+        justify-content: space-between;
     }
 
-    &__star {
-        width: 20px;
-        margin-right: 5px;
+    & .star__item {
+        height: 25px;
+        width: 25px;
     }
 
     &__text {
-        font-family: 'Josefin Sans', sans-serif;
-        margin-top: 20px;
-        font-size: 16px;
+        margin-top: 30px;
+        font-size: 18px;
+        line-height: 21px;
         text-align: center;
         color: #706E6E;
+        width: 600px;
+        height: 115px;
     }
 }
 
 .content {
-    margin: 0 auto;
-    width: 500px;
-    margin-bottom: 50px;
-}
-
-.slides .slick-prev,
-.slides .slick-next {
-    position: absolute;
-    top: 50%;
-    z-index:1;
-    background: yellow;
-    border-radius: 50%;
+    margin: 0 auto 50px;
+    width: 600px;
 }
 
 .showFormButton {
@@ -96,15 +94,39 @@
         width: 600px;
         height: 40px;
         margin-bottom: 20px;
-        outline: 1px black solid;
+        outline: 1px #F8AB11 solid;
 
         &--big {
             height: 150px;
             padding: 10px;
         }
-
-        &--stars {
-            width: 400px;
-        }
     }
 }
+
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #F8AB11 !important;
+}
+
+.slick-dots li button:before {
+    color: #F8AB11 !important;
+}
+
+.slides .slick-prev,
+.slides .slick-next {
+    position: absolute;
+    top: 50%;
+    z-index:1;
+    background: #F8AB11;
+    border-radius: 50%;
+}
+
+
+.slides .slick-arrow .slick-next {
+    content: "→" !important;
+}
+
+// // .slick-arrow .slick-prev:before, .slick-arrow .slick-next:before {
+
+// // }
