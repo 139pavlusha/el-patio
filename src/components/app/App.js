@@ -14,6 +14,9 @@ import Footer from '../Home/footer/footer';
 import CateringBanner from '../Catering/banner/banner';
 import PorQue from '../Catering/por-que/por-que';
 import ChooseEvent from '../Catering/choose-event/choose-event';
+import FAQ from '../Catering/faq/faq';
+import Form from '../Catering/form/form';
+
 
 
 
@@ -32,7 +35,6 @@ function App() {
     <div className="App">
       <Navigation />
       <Banner />
-        <hr></hr>
       <TrueCuisine />
         <hr></hr>
       <PopularDishes />
@@ -48,6 +50,8 @@ function App() {
       <CateringBanner />
       <ChooseEvent />
       <PorQue />
+      <FAQ />
+      <Form />
       <hr></hr>
       {/* <MenuBanner /> */}
     </div>

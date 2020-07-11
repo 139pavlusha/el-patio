@@ -5,14 +5,58 @@
   flex-direction: column;
   align-items: center;
   color: #706E6E;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: '';
+    background: url(../choose-event/images/bell_pepper.png) no-repeat top center;
+    background-size: contain;
+    z-index: -20;
+    width: 600px;
+    height: 1100px;
+    position: absolute;
+    top: -50px;
+    left: -100px;
+
+    @media (max-width: 1600px) {
+      width: 450px;
+      height: 800px;
+    }
+  }
+
+  &::after {
+    content: '';
+    background: url(../choose-event/images/greenery.png) no-repeat top center;
+    background-size: contain;
+    z-index: -20;
+    width: 430px;
+    height: 1311px;
+    position: absolute;
+    top: 420px;
+    right: 0;
+    z-index: -10;
+
+    @media (max-width: 1600px) {
+      width: 301px;
+      height: 918px;
+    }
+  }
+
+  
   
   & a {
     text-decoration: none;
     color: white;
     margin-bottom: 30px;
+    transition: .5s;
     
     &:hover > * {
       color: #F8AB11;
+    }
+
+    &:hover > .choose-event__item::after {
+      display: none;
     }
   }
 
@@ -59,30 +103,30 @@
     }
 
     &--corp {
-      background: url(../choose-event/corporate.png) no-repeat top center;
+      background: url(../choose-event/images/corporate.png) no-repeat top center;
     }
 
     &--bbq {
-      background: url(../choose-event/bbq.png) no-repeat top center;
+      background: url(../choose-event/images/bbq.png) no-repeat top center;
       margin-top: 20px;
     }
 
     &--wed {
-      background: url(../choose-event/wedding.png) no-repeat top center;
+      background: url(../choose-event/images/wedding.png) no-repeat top center;
       margin-top: 40px;
     }
 
     &--birthday {
-      background: url(../choose-event/birthday.png) no-repeat top center;
+      background: url(../choose-event/images/birthday.png) no-repeat top center;
     }
 
     &--party {
-      background: url(../choose-event/party.png) no-repeat top center;
+      background: url(../choose-event/images/party.png) no-repeat top center;
       margin-top: 20px;
     }
 
     &--other {
-      background: url(../choose-event/other.png) no-repeat top center;
+      background: url(../choose-event/images/other.png) no-repeat top center;
       margin-top: 40px;
     }
   }

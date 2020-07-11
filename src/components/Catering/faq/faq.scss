@@ -1,0 +1,22 @@
+.faq {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+
+  &__title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #706E6E;
+    padding-bottom: 40px;
+  }
+
+  &__questions {
+    display: flex;
+    justify-content: space-between;
+  }
+}

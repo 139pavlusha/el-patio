@@ -1,0 +1,86 @@
+.form {
+  width: 100%;
+  height: fit-content;
+  color: #706E6E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+  margin: 0 auto;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  position: relative;
+
+  &::before {
+    content: '';
+    background: url(../form/images/pepper1.png) no-repeat top center;
+    background-size: contain;
+    z-index: -20;
+    width: 470px;
+    height: 470px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    @media (max-width: 1600px) {
+      width: 400px;
+      height: 400px;
+    }
+  }
+
+  &::after {
+    content: '';
+    background: url(../form/images/pepper2.png) no-repeat top center;
+    background-size: contain;
+    z-index: -20;
+    width: 470px;
+    height: 470px;
+    position: absolute;
+    bottom: -10px;
+    right: 0px;
+
+    @media (max-width: 1600px) {
+      width: 400px;
+      height: 400px;
+    }
+  }
+
+  &__form {
+    width: 680px;
+    padding-top: 50px;
+
+    & input::placeholder {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 16px;
+        color: #706E6E;
+    }
+
+    & input:active, & input:focus {
+      outline-color: #F8AB11;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+
+  &__name, &__email {
+    width: 330px;
+    height: 50px;
+    padding: 10px;
+  }
+
+  &__text {
+    width: 680px;
+    height: 130px;
+    margin-bottom: 30px;
+    padding: 10px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+  }
+}
