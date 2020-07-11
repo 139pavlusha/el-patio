@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.scss';
+import '../../fonts/Awesome/font-styles/all.min.css';
 
 
 import Navigation from '../navigation/navigation';
