@@ -3,6 +3,7 @@ import './App.scss';
 
 
 import Navigation from '../navigation/navigation';
+import Footer from '../footer/footer';
 
 import Home from '../Home';
 import Menu from '../Menu';
@@ -19,7 +20,7 @@ function App() {
       <Menu />
       <hr></hr>
       <Catering />
-
+      <Footer />
     </div>
   );
 }

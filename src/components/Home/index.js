@@ -6,7 +6,6 @@ import PopularDishes from '../Home/popular-dishes/popular-dishes';
 import UniqueCombination from '../Home/unique-combination/unique-combination';
 import Reservation from '../Home/reservation/reservation';
 import Testimonial from '../Home/testimonial/testimonial';
-import Footer from '../Home/footer/footer';
 
 function Home() {
   return (
@@ -17,7 +16,6 @@ function Home() {
       <UniqueCombination />
       <Reservation />
       <Testimonial />
-      <Footer />
     </div>
   )
 }
