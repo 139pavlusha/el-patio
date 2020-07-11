@@ -71,12 +71,14 @@
     margin-bottom: 50px;
 }
 
-// .slides .slick-prev,
-// .slides .slick-next {
-//     position: absolute;
-//     top: 50%;
-//     z-index:1;
-// }
+.slides .slick-prev,
+.slides .slick-next {
+    position: absolute;
+    top: 50%;
+    z-index:1;
+    background: yellow;
+    border-radius: 50%;
+}
 
 .showFormButton {
     display: flex;

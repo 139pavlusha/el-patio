@@ -2,58 +2,24 @@ import React from 'react';
 import './App.scss';
 
 
-import Navigation from '../Home/navigation/navigation';
-import Banner from '../Home/banner/banner';
-import TrueCuisine from '../Home/true-cuisine/true-cuisine';
-import PopularDishes from '../Home/popular-dishes/popular-dishes';
-import UniqueCombination from '../Home/unique-combination/unique-combination';
-import Reservation from '../Home/reservation/reservation';
-import Testimonial from '../Home/testimonial/testimonial';
-import Footer from '../Home/footer/footer';
+import Navigation from '../navigation/navigation';
 
-import CateringBanner from '../Catering/banner/banner';
-import PorQue from '../Catering/por-que/por-que';
-import ChooseEvent from '../Catering/choose-event/choose-event';
-import FAQ from '../Catering/faq/faq';
-import Form from '../Catering/form/form';
-
-
-
-
-// import MenuBanner from '../Menu/banner/banner';
-
-
-
-
-
-
+import Home from '../Home';
+import Menu from '../Menu';
+import Catering from '../Catering';
 
 
 // need to del <hr>
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Navigation />
-      <Banner />
-      <TrueCuisine />
-        <hr></hr>
-      <PopularDishes />
+      <Home />
       <hr></hr>
-      <UniqueCombination />
+      <Menu />
       <hr></hr>
-      <Reservation />
-      <hr></hr>
-      <Testimonial />
-      <hr></hr>
-      <Footer />
-      <hr></hr>
-      <CateringBanner />
-      <ChooseEvent />
-      <PorQue />
-      <FAQ />
-      <Form />
-      <hr></hr>
-      {/* <MenuBanner /> */}
+      <Catering />
+
     </div>
   );
 }
