@@ -1,0 +1,69 @@
+.popular-dishes {
+    height: 110vw;
+    max-height: 1600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 4% 7%;
+    color: #706E6E;
+
+    & .menu-type__list{
+      display: flex;
+      justify-content: center;
+      font-family: Josefin Sans;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 18px;
+      text-transform: uppercase;
+      color: #F8AB11;
+
+       & a {
+         color: inherit;
+       }
+
+       & span {
+         padding: 0 7px;
+       }
+      }
+
+      & .button {
+        margin: 0 auto;
+      }
+
+    &__menu {
+      position: relative;
+
+      & .fork{
+        width: 119px;
+        height: 100%;
+        background: url(../popular-dishes/dish/images/fork.png) no-repeat bottom center;
+        background-size: contain;
+        position: absolute;
+        bottom: -20px;
+        left: -65px;
+        z-index: 1;
+  
+        // @media (max-width: 1600px) {
+        //   width: 320px;
+        //   height: 450px;
+        // }
+      }
+      & .knife{
+        width: 119px;
+        height: 100%;
+        background: url(../popular-dishes/dish/images/knife.png) no-repeat bottom center;
+        background-size: contain;
+        position: absolute;
+        bottom: -20px;
+        right: -65px;
+        z-index: 1;
+  
+        // @media (max-width: 1600px) {
+        //   width: 320px;
+        //   height: 450px;
+        // }
+      }
+  
+
+    }
+  }
