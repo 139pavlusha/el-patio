@@ -1,7 +1,8 @@
 .reservation {
-    padding-top: 50px;
+    padding: 100px 0;
     background-color: white;
     position: relative;
+    color: #706E6E;
 
     &__content {
         width: 600px;
@@ -12,14 +13,6 @@
         margin-bottom: 40px;
     }
 
-    // &__subtitle {
-    //     font-size: 40px;
-    //     text-align: center;
-    //     text-transform: uppercase;
-    //     color: #706E6E;
-    //     margin-bottom: 40px;
-    // }
-
     &__info {
         margin-bottom: 45px;
     }
@@ -29,11 +22,15 @@
         justify-content: space-between;
         flex-wrap: wrap;
 
+        & input {
+            color: #706E6E;
+        }
+
         &__item {
             width: calc(50% - 15px);
             padding: 20px;
             height: 45px;
-            outline: 1px solid #141414;
+            outline: 1px solid #706E6E;
             margin-bottom: 30px;
 
             &--special {
@@ -42,7 +39,7 @@
             }
 
             &::placeholder {
-                color: #303030;
+                color: #706E6E;
             }
         }
 

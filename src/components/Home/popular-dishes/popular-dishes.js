@@ -14,26 +14,29 @@ function PopularDishes() {
           <Title slogan="Prueba nuestros" title="popular dishes"/>
           <Stars />
         </div>
-        <div className="row popular-dishes__menu">
+        <div className="popular-dishes__menu">
           <div className="fork"></div>
           <div className="knife"></div>
-        <ul className="col-12 menu-type__list">
-          <li className="menu-type__item"><a href="#">Lunch Menu</a></li><span>/</span>
-          <li className="menu-type__item"><a href="#">Dinner Menu</a></li>
-      </ul>
+          <ul className="menu-type__list">
+            <li className="menu-type__item"><a href="#">Lunch Menu</a></li><span>/</span>
+            <li className="menu-type__item"><a href="#">Dinner Menu</a></li>
+          </ul>
 
-          <Dish title="Triples Surtidos"
-                desc="Sandwich with assorted fillings"  
-                price="4.60" />
-          <Dish />
-          <Dish />
-          <Dish />
-          <Dish />
-          <Dish />
-          <Dish />
-          <Dish />
+          <div className="row">
+            <Dish title="Triples Surtidos"
+                  desc="Sandwich with assorted fillings"  
+                  price="4.60" />
+            <Dish />
+            <Dish />
+            <Dish />
+            <Dish />
+            <Dish />
+            <Dish />
+            <Dish />
+          </div>
+
         </div>
-        <Button button="open the full menu" />  
+        <div className="popular-dishes__button"><Button button="open the full menu" /> </div>
       </section>
     </div>  
   );
