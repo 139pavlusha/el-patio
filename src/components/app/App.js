@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.scss';
-import '../../fonts/Awesome/font-styles/all.min.css';
 
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Navigation from '../navigation/navigation';
 import Footer from '../footer/footer';
@@ -14,15 +14,17 @@ import Catering from '../Catering';
 // need to del <hr>
 function App() {
   return (
-    <div className="app">
-      <Navigation />
-      <Home />
-      <hr></hr>
-      <Menu />
-      <hr></hr>
-      <Catering />
-      <Footer />
-    </div>
+    <Router>
+      <div className="app">
+        <Navigation />
+        <Home />
+        <hr></hr>
+        <Menu />
+        <hr></hr>
+        <Catering />
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
