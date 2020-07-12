@@ -1,0 +1,57 @@
+.bake {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  // flex-direction: row;
+  position: relative;
+
+  &:nth-of-type(2n) {
+    flex-direction: row-reverse;
+  }
+
+  &__img img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  // &__img:nth-of-type(2n) {
+  //     right: 0;
+  //     position: absolute;
+  // }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    // &:nth-of-type(2n) {
+    //   position: absolute;
+    //   left: 0;
+    // }
+  }
+
+  &__title {
+    color: #F8AB11;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+
+    @media (max-width: 1600px) {
+      font-size: 42px;
+    }
+  }
+
+  &__descr {
+    font-size: 18px;
+    line-height: 20px;
+    width: 90%;
+  }
+}
+
+// .row:nth-child(2n) {
+//   flex-direction: row-reverse;
+// }

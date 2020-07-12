@@ -1,0 +1,78 @@
+@mixin size($width, $heigth: $width) {
+  width: $width;
+  height: $heigth;
+}
+
+@mixin pos($pos: absolute, $t: false, $r: false, $b: false, $l: false, $z: false) {
+	position: $pos;
+	@if $t { top: $t; }
+	@if $r { right: $r; }
+	@if $b { bottom: $b; }
+	@if $l { left: $l; }
+	@if $z { z-index: $z; }
+}
+
+.bakery {
+  color: #706E6E;
+  width: 100%;
+  height: fit-content;
+  padding: 200px 200px 100px;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Josefin', sans-serif;
+
+  &__title {
+    padding-bottom: 100px;
+  }
+
+  &__bg {
+    position: absolute;
+    
+    &--1 {
+      @include size(300px, 400px);
+      @include pos($t: 80px, $l: 100px);
+      background: url(./bg-images/t-blueberries.png) no-repeat top center;
+      background-size: contain;
+    }
+
+    &--2 {
+      @include size(370px, 1000px);
+      @include pos($t: 50px, $r: 0);
+      background: url(./bg-images/items.png) no-repeat top center;
+      background-size: contain;
+    }
+
+    &--3 {
+      @include size(430px, 335px);
+      @include pos($t: 650px, $r: 0);
+      background: url(./bg-images/eggs.png) no-repeat top center;
+      background-size: contain;
+    }
+
+    &--4 {
+      @include size(400px, 1700px);
+      @include pos($r: 0, $b: 0);
+      background: url(./bg-images/r-blueberries.png) no-repeat top center;
+      background-size: contain;
+    }
+
+    &--5 {
+      @include size(330px, 550px);
+      @include pos($b: 0, $l: 0);
+      background: url(./bg-images/l-blueberries.png) no-repeat top center;
+      background-size: contain;
+
+      @media (max-width: 1600px) {
+        @include size(300px, 450px);
+      }
+    }
+
+    &--6 {
+      @include size(800px);
+      @include pos($b: 27%, $l: 0);
+      transform: translateX(-60%);
+      background: url(./bg-images/pie.png) no-repeat top center;
+      background-size: contain;
+    }
+  }
+}

@@ -10,6 +10,8 @@ import Home from '../Home';
 import Menu from '../Menu';
 import Catering from '../Catering';
 
+import Bakery from '../Bakery';
+
 
 // need to del <hr>
 function App() {
@@ -17,11 +19,15 @@ function App() {
     <Router>
       <div className="app">
         <Navigation />
+        <hr></hr>
         <Home />
         <hr></hr>
         <Menu />
         <hr></hr>
         <Catering />
+        <hr></hr>
+        <Bakery />
+        <hr></hr>
         <Footer />
       </div>
     </Router>
