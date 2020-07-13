@@ -1,12 +1,11 @@
 .bakery {
   &__list {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    // padding-top: 100px;
+    // height: max-content;
   }
 
   &__block {
     width: 100%;
   }
 }
+

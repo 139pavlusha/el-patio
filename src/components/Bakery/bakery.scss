@@ -12,13 +12,17 @@
 	@if $z { z-index: $z; }
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .bakery {
   color: #706E6E;
   width: 100%;
-  height: fit-content;
+  // height: max-content;
   padding: 200px 200px 100px;
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
   font-family: 'Josefin', sans-serif;
 
   &__title {
@@ -69,10 +73,15 @@
 
     &--6 {
       @include size(800px);
-      @include pos($b: 27%, $l: 0);
+      @include pos($b: 22%, $l: 0);
       transform: translateX(-60%);
       background: url(./bg-images/pie.png) no-repeat top center;
       background-size: contain;
+
+      @media (max-width: 1600px) {
+        @include size(600px);
+        @include pos($b: 25%, $l: -50px);
+      }
     }
   }
 }
