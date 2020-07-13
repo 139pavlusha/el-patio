@@ -17,10 +17,13 @@ function App() {
       <div className="app">
         <Navigation />
         <Route exact path="/" render={() => <Home />} />
-        <Route path="/main" component={Home} />
-        <Route path="/menu" component={Menu} />
-        <Route path="/bakery" component={Bakery} />
-        <Route path="/catering" component={Catering} />
+        <Route path="/main" render={() => <Home />} />
+        <Route path="/menu" render={() => <Menu />} />
+        <Route path="/bakery" render={() => <Bakery />} />
+        <Route path="/catering" render={() => <Catering />} />
+        {/* <Route path="/market" render={() => <Markets />} /> */}
+        {/* <Route path="/contact" render={() => <Contact />} /> */}
+
         <Footer />
       </div>
     </Router>
