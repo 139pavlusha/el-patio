@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 export default class NavItem extends Component {
@@ -7,9 +7,9 @@ export default class NavItem extends Component {
     let { itemName, url } = this.props;
     return (
       <li className="navigation__item">
-        <Link className="menu__link" to={url} >
+        <NavLink  activeStyle={{ color: '#F8AB11' }} to={url} >
         {itemName}
-        </Link>
+        </NavLink>
       </li>
     );
   }
