@@ -9,8 +9,8 @@ import Footer from "../footer/footer";
 import Home from "../Home";
 import Menu from "../Menu";
 import Catering from "../Catering";
+import Bakery from "../Bakery";
 
-// need to del <hr>
 function App() {
   return (
     <Router>
@@ -19,6 +19,7 @@ function App() {
         <Route exact path="/" render={() => <Home />} />
         <Route path="/main" component={Home} />
         <Route path="/menu" component={Menu} />
+        <Route path="/bakery" component={Bakery} />
         <Route path="/catering" component={Catering} />
         <Footer />
       </div>
