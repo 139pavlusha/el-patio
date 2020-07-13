@@ -10,11 +10,14 @@ import Home from "../Home";
 import Menu from "../Menu";
 import Catering from "../Catering";
 import Bakery from "../Bakery";
+import Contact from "../Contact";
+import ScrollToTop from "./ScrollToTop"
 
 function App() {
   return (
     <Router>
       <div className="app">
+      <ScrollToTop />
         <Navigation />
         <Route exact path="/" render={() => <Home />} />
         <Route path="/main" render={() => <Home />} />
@@ -22,8 +25,7 @@ function App() {
         <Route path="/bakery" render={() => <Bakery />} />
         <Route path="/catering" render={() => <Catering />} />
         {/* <Route path="/market" render={() => <Markets />} /> */}
-        {/* <Route path="/contact" render={() => <Contact />} /> */}
-
+        <Route path="/contact" render={() => <Contact />} />
         <Footer />
       </div>
     </Router>
@@ -31,3 +33,5 @@ function App() {
 }
 
 export default App;
+
+
