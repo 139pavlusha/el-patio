@@ -1,15 +1,14 @@
-import React from 'react';
-import './App.scss';
+import React from "react";
+import "./App.scss";
 
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import Navigation from '../navigation/navigation';
-import Footer from '../footer/footer';
+import Navigation from "../navigation/navigation";
+import Footer from "../footer/footer";
 
-import Home from '../Home';
-import Menu from '../Menu';
-import Catering from '../Catering';
-
+import Home from "../Home";
+import Menu from "../Menu";
+import Catering from "../Catering";
 
 // need to del <hr>
 function App() {
@@ -17,11 +16,10 @@ function App() {
     <Router>
       <div className="app">
         <Navigation />
-        <Home />
-        <hr></hr>
-        <Menu />
-        <hr></hr>
-        <Catering />
+        <Route exact path="/" render={() => <Home />} />
+        <Route path="/main" component={Home} />
+        <Route path="/menu" component={Menu} />
+        <Route path="/catering" component={Catering} />
         <Footer />
       </div>
     </Router>
