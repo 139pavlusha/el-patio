@@ -46,11 +46,17 @@
     &:active, &:hover {
       color: #F8AB11;
     }
-
-    &:active::after , &:hover::after  {
-      width: 100%;
-      left: 0;
-    }
   }
 }
 
+.active::after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #F8AB11;
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  transition: 0.3s;
+  transform: translateX(-50%);
+}
