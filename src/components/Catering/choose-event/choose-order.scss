@@ -41,13 +41,17 @@
         z-index: 2;
     }
 
-    &__buttons-group {
+    &__buttons-group,
+    &__buttons-group-2 {
         display: flex;
         width: 100%;
         justify-content: center;
         position: absolute;
         z-index: 2;
-        top: 570px;
+        top: 330px;
+    }
+    &__buttons-group-2 {
+        top: 680px;
     }
 
     &__back-button {
@@ -106,4 +110,82 @@
         left: 250px;
         z-index: 2;
     }
+}
+
+.progress-1,
+.progress-2,
+.progress-3,
+.progress-4,
+.progress-5 {
+    width: 325px;
+    height: 20px;
+    border-radius: 10px/50%;
+    background: #FCDDA0;
+    position: relative;
+    margin: 20px 0 70px;
+
+    &::after {
+        content: '';
+        width: 20%;
+        height: 20px;
+        background: #F8AB11;
+        border-radius: 10px/50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.progress-2 {
+    &::after {
+        content: '';
+        width: 40%;
+    }
+}
+
+.progress-3 {
+    &::after {
+        content: '';
+        width: 60%;
+    }
+}
+
+.progress-4 {
+    &::after {
+        content: '';
+        width: 80%;
+    }
+}
+
+.progress-5 {
+    &::after {
+        content: '';
+        width: 100%;
+    }
+}
+
+
+.fourth-step{
+    &__container {
+        width: 700px;
+        margin: 0 auto;
+        position: absolute;
+        z-index: 2;
+        top: 320px;
+        left: calc(50% - 350px);
+
+        display: flex;
+        justify-content: center;
+    }
+
+    &__content {
+        width: 100%;
+        position: absolute;
+        top: -70px;
+        // left: 30%;
+    }
+}
+
+.--height {
+    height: 250px;
 }

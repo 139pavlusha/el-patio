@@ -10,24 +10,33 @@ import Title from '../../layout/title/title';
 
 import Event from './event'
 
+import SecondForm from './second-form/second-form';
+import ThirdForm from './third-form/third-form';
+
 export default class ChooseEvent extends Component {
 
   state = {
     classNameWindow: 'choose-event__list',
     typeOfOrder: '',
     classNameModalWindow: 'display-none',
+    classNameProgress: 'progress-1',
 
     FieldsComplete: false,
     classNameFirstForm: 'first-step__container',
-
     labelName: '',
     labelPhone: '',
     labelEmail: '',
-    labelGuestsNumber: '',
+    labelGuestsNumber: '1',
     labelDate: '',
     labelTime: '',
     labelCity: '',
-    labelAddress: ''
+    labelAddress: '',
+
+    classNameSecondForm: 'display-none',
+
+    classNameThirdForm: 'display-none',
+
+    classNameFourthForm: 'display-none'
   }
 
   clearFirstForm = () => {
@@ -42,22 +51,31 @@ export default class ChooseEvent extends Component {
       labelAddress: '',
 
       FieldsNotComplete: false,
-      classNameFirstForm: 'first-step__container'
+      classNameFirstForm: 'first-step__container',
+
+      classNameSecondForm: 'display-none',
+      classNameThirdForm: 'display-none',
+      classNameFourthForm: 'display-none',
+
+      classNameProgress: 'progress-2'
     });
+
   }
   sendFirstForm = () => {
     const { labelName, labelPhone, labelDate, labelEmail, labelGuestsNumber, labelAddress, labelTime, labelCity } = this.state;
     const FieldsComplete = labelName && labelPhone && labelDate && labelEmail && labelGuestsNumber && labelAddress && labelCity && labelTime;
     if (FieldsComplete) {
-      console.log('OK');
+      this.clearFirstForm();
+      // console.log('OK');
       this.setState({
         FieldsNotComplete: false,
-        classNameFirstForm: 'display-none'
+        classNameFirstForm: 'display-none',
+        classNameProgress: 'progress-3',
+        classNameSecondForm: 'second-step__container'
       });
-
     }
     else {
-      console.log('ERROR');
+      // console.log('ERROR');
       this.setState({ FieldsNotComplete: true });
     }
   }
@@ -70,15 +88,35 @@ export default class ChooseEvent extends Component {
     }
   }
 
+  backSecondForm = () => {
+    this.setState({ classNameFirstForm: 'first-step__container', classNameSecondForm: 'display-none', classNameProgress: 'progress-2' });
+  }
+  sendSecondForm = () => {
+    this.setState({ classNameSecondForm: 'display-none', classNameThirdForm: 'third-step__container', classNameProgress: 'progress-4' });
+  }
+
+  backThirdForm = () => {
+    this.setState({ classNameSecondForm: 'second-step__container', classNameThirdForm: 'display-none', classNameProgress: 'progress-3' });
+  }
+  sendThirdForm = () => {
+    this.setState({ classNameThirdForm: 'display-none', classNameFourthForm: 'fourth-step__container', classNameProgress: 'progress-5' });
+  }
+
+  backFourthForm = () => {
+    this.setState({ classNameThirdForm: 'third-step__container', classNameFourthForm: 'display-none', classNameProgress: 'progress-4' });
+  }
+
   closeModalWindow = () => {
+    this.clearFirstForm();
     this.setState({
       classNameWindow: 'choose-event__list',
       typeOfOrder: '',
-      classNameModalWindow: 'display-none'
+      classNameModalWindow: 'display-none',
+      classNameProgress: 'progress-1'
     });
-    this.clearFirstForm();
 
   }
+
   showCorp = () => {
     this.setState({ classNameWindow: 'display-none', typeOfOrder: 'Corporate event', classNameModalWindow: 'choose-order' });
     this.clearFirstForm();
@@ -170,19 +208,46 @@ export default class ChooseEvent extends Component {
               <input onChange={this.onDateChange} placeholder="Date" type="text" className="reservation-form__item" value={this.state.labelDate} />
               <input onChange={this.onTimeChange} placeholder="Time" className="reservation-form__item" value={this.state.labelTime} />
             </form>
+
             <div className="first-step__warn">
               {this.WARfieldsNotComplete()}
             </div>
+
+            <div className="choose-order__buttons-group">
+              <button onClick={this.closeModalWindow} className="choose-order__back-button">Back</button>
+              <button onClick={this.sendFirstForm} className="choose-order__ok-button">Ok</button>
+            </div>
           </div>
 
-          <div className="choose-order__buttons-group">
-            <button onClick={this.closeModalWindow} className="choose-order__back-button">Back</button>
-            <button onClick={this.sendFirstForm} className="choose-order__ok-button">Ok</button>
+          <div className={this.state.classNameSecondForm}>
+            <SecondForm />
+            <div className="choose-order__buttons-group-2">
+              <button onClick={this.backSecondForm} className="choose-order__back-button">Back</button>
+              <button onClick={this.sendSecondForm} className="choose-order__ok-button">Ok</button>
+            </div>
           </div>
 
+          <div className={this.state.classNameThirdForm}>
+            <ThirdForm />
+            <div className="choose-order__buttons-group-2">
+              <button onClick={this.backThirdForm} className="choose-order__back-button">Back</button>
+              <button onClick={this.sendThirdForm} className="choose-order__ok-button">Ok</button>
+            </div>
+          </div>
+
+          <div className={this.state.classNameFourthForm}>
+            <div className="fourth-step__content">
+              <h3 className="third-step__title">Please mark the ingridients that you would like to remove</h3>
+            </div>
+            <textarea onChange={this.onTextChange} placeholder="Feel free to tell us whatever you want" className="testimonial__item testimonial__item--big --height" value={this.state.labelText} />
+            <div className="choose-order__buttons-group">
+              <button onClick={this.backFourthForm} className="choose-order__back-button">Back</button>
+              <button onClick={this.closeModalWindow} className="choose-order__ok-button">Ok</button>
+            </div>
+          </div>
         </section>
 
-        <div className="choose-event__progress"></div>
+        <div className={this.state.classNameProgress}></div>
       </div>
     );
   }
