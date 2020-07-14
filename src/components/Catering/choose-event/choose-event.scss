@@ -52,13 +52,13 @@
     margin-bottom: 30px;
     transition: .5s;
     
-    &:hover > * {
-      color: #F8AB11;
-    }
+    // &:hover > * {
+    //   color: #F8AB11;
+    // }
 
-    &:hover > .choose-event__item::after {
-      display: none;
-    }
+    // &:hover > .choose-event__item::after {
+    //   display: none;
+    // }
   }
 
   &__title {
@@ -82,22 +82,10 @@
     height: 530px;
     background-size: cover;
     position: relative;
-    z-index: -2;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: #09090940;
-      z-index: -1;
-    }
     
     @media (max-width: 1600px) {
       width: 300px;
@@ -105,30 +93,30 @@
     }
 
     &--corp {
-      background: url(../choose-event/images/corporate.png) no-repeat top center;
+      background: linear-gradient(#09090940, #09090940), url(../choose-event/images/corporate.png) no-repeat top center;
     }
 
     &--bbq {
-      background: url(../choose-event/images/bbq.png) no-repeat top center;
+      background: linear-gradient(#09090940, #09090940), url(../choose-event/images/bbq.png) no-repeat top center;
       margin-top: 20px;
     }
 
     &--wed {
-      background: url(../choose-event/images/wedding.png) no-repeat top center;
+      background: linear-gradient(#09090940, #09090940), url(../choose-event/images/wedding.png) no-repeat top center;
       margin-top: 40px;
     }
 
     &--birthday {
-      background: url(../choose-event/images/birthday.png) no-repeat top center;
+      background: linear-gradient(#09090940, #09090940), url(../choose-event/images/birthday.png) no-repeat top center;
     }
 
     &--party {
-      background: url(../choose-event/images/party.png) no-repeat top center;
+      background: linear-gradient(#09090940, #09090940), url(../choose-event/images/party.png) no-repeat top center;
       margin-top: 20px;
     }
 
     &--other {
-      background: url(../choose-event/images/other.png) no-repeat top center;
+      background: linear-gradient(#09090940, #09090940), url(../choose-event/images/other.png) no-repeat top center;
       margin-top: 40px;
     }
   }

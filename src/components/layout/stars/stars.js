@@ -6,12 +6,12 @@ import star from '../stars/images/Star.png';
 function Stars() {
     
   return (
-    <div className="star">
-      <img src={star} alt="star" className="star__item" />
-      <img src={star} alt="star" className="star__item" />
-      <img src={star} alt="star" className="star__item" />
-      <img src={star} alt="star" className="star__item" />
-      <img src={star} alt="star" className="star__item" />
+    <div className="stars">
+      <img src={star} alt="star" className="stars__item" />
+      <img src={star} alt="star" className="stars__item" />
+      <img src={star} alt="star" className="stars__item" />
+      <img src={star} alt="star" className="stars__item" />
+      <img src={star} alt="star" className="stars__item" />
     </div>
   );
 }

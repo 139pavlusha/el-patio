@@ -30,6 +30,7 @@
     &__avatar {
         margin-left: 80px;
         width: 100px;
+        border-radius: 50%;
     }
 
     &__info {
@@ -48,7 +49,7 @@
         color: #F8AB11;
     }
 
-    & .star {
+    & .stars {
         width: 200px;
         height: 25px;
         margin: 0 auto;
@@ -57,7 +58,7 @@
         justify-content: space-between;
     }
 
-    & .star__item {
+    & .stars__item {
         height: 25px;
         width: 25px;
     }
@@ -103,14 +104,14 @@
     }
 }
 
-
 .slick-dots li.slick-active button:before {
     opacity: .75;
-    color: #F8AB11 !important;
+    color: #F8AB11;
 }
 
 .slick-dots li button:before {
     color: #F8AB11 !important;
+    opacity: 1;
 }
 
 .slides .slick-prev,
@@ -120,12 +121,40 @@
     z-index:1;
     background: #F8AB11;
     border-radius: 50%;
+    width: 0;
+    height: 0;
+}
+
+.slides .slick-prev:after {
+    position: absolute;
+    left: -200px;
+    z-index:1;
+    content: "←";
+    color: #F8AB11;
+    font-size: 30px;
+}
+
+.slides .slick-next:after {
+    position: absolute;
+    z-index:1;
+    content: "→";
+    right: -200px;
+    color: #F8AB11;
+    font-size: 30px;
 }
 
 
-.slides .slick-arrow .slick-next {
-    content: "→" !important;
-}
+
+// .slick-arrow .slick-prev:before {
+//     content: "→" !important;
+//     width: 30px;
+//     height: 30px;
+// }
+
+
+// .slides .slick-arrow .slick-next {
+//     content: "→" !important;
+// }
 
 // // .slick-arrow .slick-prev:before, .slick-arrow .slick-next:before {
 
