@@ -1,0 +1,46 @@
+.contacts {
+    width: 100wh;
+    height: 100vh;
+    background: linear-gradient(#09090940, #09090940), url(./Contact-banner.png) no-repeat top center;
+    background-size: cover;
+    color: #ffffff;
+    padding-top: 5%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+
+    &__form {
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    &__complete_img {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    &__complete_title {
+        width: 500px;
+        font-size: 30px;
+        color: #ffffff;
+        margin: 30px auto;
+        text-align: left;
+        
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: center
+        
+        
+    }
+
+    &__left {
+        margin-right: 8%;
+    }
+
+    &__button {
+        margin: 25px auto;
+    }
+}
