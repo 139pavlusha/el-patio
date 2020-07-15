@@ -17,10 +17,8 @@ const Banner = () => {
           </div>
           <div className="banner__buttons">
             <div className="banner__button"><Button button="book a table" /></div>
-            
             <div className="banner__button"><Button button="discover menu" /></div>
           </div>
-
         </div>
       </div>
     </header>
