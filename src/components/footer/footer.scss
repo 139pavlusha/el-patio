@@ -35,10 +35,6 @@
         &--icon {
             margin: 20px 0;
 
-            // & svg {
-            //     height: 50px;
-            // }
-
             & a {
                 text-decoration: none;
                 color: #FFFFFF;
@@ -46,6 +42,10 @@
 
             & i {
                 font-size: 30px;
+            }
+
+            &:hover i {
+                color: #F8AB11;
             }
         }
     }

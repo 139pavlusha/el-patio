@@ -1,5 +1,6 @@
 import React from 'react';
 import Bake from '../Bake/bake';
+import './bakery-list.scss';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
