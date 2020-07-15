@@ -1,0 +1,27 @@
+.show-dishes {
+    &__container {
+        margin-left: 270px;
+    }
+
+    &__list {
+        // width: 45%;
+        position: relative;
+        padding-top: 50px;
+    }
+    
+    &__prices {
+        position: absolute;
+        top: 0;
+        right: -30px;
+
+        font-family: Josefin Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 22px;
+
+        text-align: right;
+
+        color: #706E6E;
+    }
+}

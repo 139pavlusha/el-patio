@@ -44,7 +44,8 @@ export default class MenuContent extends Component {
       classNameMain: '',
       classNameAppet: '',
       classNameDessert: '',
-      classNameGrill: ''
+      classNameGrill: '',
+      filter: ''
     });
   }
   clickSandwich = () => {
@@ -118,9 +119,10 @@ export default class MenuContent extends Component {
               <div className="menu-container__horizontal-line"></div>
             </ul>
           </div>
+
+          <ShowDishes menu={this.state.menu} filter={this.state.filter} />
         </div>
 
-        <ShowDishes menu={this.state.menu} filter={this.state.filter} />
         {/* <DishesNav /> */}
         {/* <DishesList /> */}
 

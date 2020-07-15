@@ -1,0 +1,39 @@
+.dish-item {
+    margin-bottom: 20px;
+    position: relative;
+
+    &__title {
+        font-family: Josefin Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        color: #706E6E;
+        margin-bottom: 5px;
+    }
+
+    &__desc {
+        width: 45%;
+        font-family: Josefin Sans;
+        font-style: normal;
+        // font-weight: bold;
+        font-size: 20px;
+        color: #706E6E;
+        margin-bottom: 5px;
+    }
+
+    &__price {
+        position: absolute;
+        top: 0;
+        right: -10px;
+
+        font-family: Josefin Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 22px;
+
+        text-align: right;
+
+        color: #F8AB11;
+    }
+}
