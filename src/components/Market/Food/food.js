@@ -14,7 +14,8 @@ import Stars from '../../layout/stars/stars';
 
 function Food() {
   return(
-      <section className="market__food food">
+      <section className="market__food food" id="food">
+        <div className="market-frame"></div>
         <div className="food__content">
           <div className="food__title">
           <Title slogan="Nuestro mercado" title="El Patio market" />

@@ -8,10 +8,10 @@ export default class MarketNav extends Component {
     return (
       <div className="market__navigation">
         <div className="market__button button">
-          <NavLink className="button__item" to="/market/wines" >Wine market</NavLink>
+          <NavLink className="button__item" to="/market/wines#wines" >Wine market</NavLink>
         </div>
         <div className="market__button button">
-          <NavLink className="button__item" to="/market/food" >Food market</NavLink>
+          <NavLink className="button__item" to="/market/food#food" >Food market</NavLink>
         </div>
       </div>
     );
