@@ -9,7 +9,7 @@ function Menu() {
     <div className="menu">
       <MenuBanner />
       <MenuTitle />
-      <MenuNav />
+      {/* <MenuNav /> */}
       <MenuContent />
     </div>
   )

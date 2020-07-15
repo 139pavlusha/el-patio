@@ -5,8 +5,8 @@ import dishes from '../../../Home/popular-dishes/dish/menu-servise'
 
 export default class DishesList extends Component {
   render() {
-    return(
-      
+    return (
+
       <div className="col-5">
         <h2>Title</h2>
         <ul>
@@ -14,9 +14,9 @@ export default class DishesList extends Component {
             if (window.location.toString().includes(item.url)) {
               return item
             }
-            }).map((el) => {
-              return <DishesListItem name={el.dishName} desc={el.dishDesc} price={el.price.regular} large={el.price.large}/>
-            })}
+          }).map((el) => {
+            return <DishesListItem name={el.dishName} desc={el.dishDesc} price={el.price.regular} large={el.price.large} />
+          })}
         </ul>
       </div>
     )

@@ -1,6 +1,6 @@
 export default [
   {
-    "id": 1, 
+    "id": 1,
     "popularDishes": false,
     "dishName": 'Simples de Jamon y Queso',
     "dishDesc": 'Frios o Tostados',
@@ -13,8 +13,8 @@ export default [
     "dishFor": "Lunch",
     "dishType": "Sandwiches"
   },
-   {
-    "id": 2, 
+  {
+    "id": 2,
     "popularDishes": true,
     "dishName": 'Triples Surtidos',
     "dishDesc": 'Sandwich with assorted fillings',
@@ -306,7 +306,7 @@ export default [
     },
     "dishFor": "Lunch",
     "dishType": "Breakfasts"
-  },{
+  }, {
     "id": 23,
     "popularDishes": true,
     "dishName": 'Empanada de carne',
@@ -361,7 +361,7 @@ export default [
 
 
 
-  
+
   {
     "id": 9,
     "popularDishes": true,
