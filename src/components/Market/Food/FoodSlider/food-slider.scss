@@ -1,0 +1,36 @@
+.food__list {
+  padding-top: 100px;
+  width: 80%;
+}
+
+.food__image {
+  margin-bottom: 20px;
+
+  & img {
+    width: 360px;
+    height: 260px;
+  
+      @media (max-width: 1600px) {
+        width: 300px;
+        height: 230px;
+      }
+  }
+}
+
+.food .slides .slick-prev:after {
+  position: absolute;
+  left: -50px;
+  z-index:1;
+  content: "←";
+  color: #F8AB11;
+  font-size: 30px;
+}
+
+.food .slides .slick-next:after {
+  position: absolute;
+  z-index:1;
+  content: "→";
+  right: -50px;
+  color: #F8AB11;
+  font-size: 30px;
+}

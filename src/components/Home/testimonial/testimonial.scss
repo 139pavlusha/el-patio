@@ -105,7 +105,7 @@
 }
 
 .slick-dots li.slick-active button:before {
-    opacity: .75;
+    // opacity: .75;
     color: #F8AB11;
 }
 
@@ -118,14 +118,11 @@
 .slides .slick-next {
     position: absolute;
     top: 50%;
-    z-index:1;
-    background: #F8AB11;
-    border-radius: 50%;
     width: 0;
     height: 0;
 }
 
-.slides .slick-prev:after {
+.testimonials .slides .slick-prev:after {
     position: absolute;
     left: -200px;
     z-index:1;
@@ -134,7 +131,7 @@
     font-size: 30px;
 }
 
-.slides .slick-next:after {
+.testimonials .slides .slick-next:after {
     position: absolute;
     z-index:1;
     content: "→";

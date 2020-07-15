@@ -9,6 +9,7 @@ import Footer from "../footer/footer";
 import Home from "../Home";
 import Menu from "../Menu";
 import Catering from "../Catering";
+import Market from "../Market";
 import Bakery from "../Bakery";
 import Contact from "../Contact";
 import ScrollToTop from "./ScrollToTop"
@@ -24,7 +25,7 @@ function App() {
         <Route path="/menu" render={() => <Menu />} />
         <Route path="/bakery" render={() => <Bakery />} />
         <Route path="/catering" render={() => <Catering />} />
-        {/* <Route path="/market" render={() => <Markets />} /> */}
+        <Route path="/market" render={() => <Market />} />
         <Route path="/contact" render={() => <Contact />} />
         <Footer />
       </div>
