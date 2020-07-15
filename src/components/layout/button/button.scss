@@ -22,4 +22,13 @@
     width: 220px;
     height: 48px;
   }
+
+  &:active, &:visited, &:focus {
+    border: none;
+    outline: none;
+  }
+
+  &:active {
+    background: #7b560a;
+  }
 }

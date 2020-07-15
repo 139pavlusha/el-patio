@@ -1,15 +1,35 @@
 .contacts {
-  width: 100wh;
-  height: 100vh;
+  width: 100%;
+  // height: 100vh;
   color: #ffffff;
-  padding-top: 5%;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
+  background: linear-gradient(#09090940, #09090940), url(./Contact-banner.png) no-repeat top center;
+  background-size: cover;
   position: relative;
+  // display: flex;
+  // flex-direction: column;
+
+  &__container {
+    width: 850px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 120px 70px 100px;
+    background: #09090940;
+  }
   
+  & input {
+    outline: none;
+    border: none;
+
+    &:active, &:focus {
+      color: #F8AB11;
+      border: 2px solid #F8AB11;
+    }
+  }
 
   &__form {
-    width: 30%;
+    width: 90%;
     margin: 50px auto;
   }
 
@@ -39,27 +59,5 @@
 
   &__button {
     margin: 25px auto;
-  }
-
-  &__formBlock {
-    position: absolute;
-    background: rgba(0, 0, 0, 0.5);
-    width: 37%;
-    height: 93%;
-    top: 75px;
-    left: 50%;
-z-index: -1;
-    transform: translate(-50%);
-  }
-
-  &__background {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(#09090940, #09090940), url(./Contact-banner.png) no-repeat top center;
-    background-size: cover;
-    z-index: -2;
-    position: absolute;
-    top: 0%;
-    left: 0%;
   }
 }
