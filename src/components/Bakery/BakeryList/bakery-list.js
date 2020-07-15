@@ -3,9 +3,10 @@ import Bake from '../Bake/bake';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import './bakery-list.scss';
 
 export default function BakeryList ({baking}) {
-  var settings = {
+  let settings = {
     dots: true,
     infinite: false,
     speed: 0,

@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.scss";
 
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, withRouter, Redirect } from "react-router-dom";
 
 import Navigation from "../navigation/navigation";
 import Footer from "../footer/footer";
@@ -11,27 +11,29 @@ import Menu from "../Menu";
 import Catering from "../Catering";
 import Bakery from "../Bakery";
 import Contact from "../Contact";
-import ScrollToTop from "./ScrollToTop"
+import ScrollToTop from "./ScrollToTop";
 
-function App() {
+const App = (props) => {
   return (
     <Router>
-      <div className="app">
-      <ScrollToTop />
-        <Navigation />
-        <Route exact path="/" render={() => <Home />} />
-        <Route path="/main" render={() => <Home />} />
-        <Route path="/menu" render={() => <Menu />} />
-        <Route path="/bakery" render={() => <Bakery />} />
-        <Route path="/catering" render={() => <Catering />} />
-        {/* <Route path="/market" render={() => <Markets />} /> */}
-        <Route path="/contact" render={() => <Contact />} />
-        <Footer />
-      </div>
+      <withRouter>
+        <div className="app">
+          <ScrollToTop />
+          {/* {props.location.pathname !== "/contact" && <Footer />} */}
+
+          <Navigation />
+          <Route exact path="/" render={() => (<Redirect to="/main" />)} /> 
+          <Route path="/main" render={() => <Home />} />
+          <Route path="/menu" render={() => <Menu />} />
+          <Route path="/bakery" render={() => <Bakery />} />
+          <Route path="/catering" render={() => <Catering />} />
+          {/* <Route path="/market" render={() => <Markets />} /> */}
+          {/* <Footer /> */}
+          <Route path="/contact" render={() => <Contact />} />
+        </div>
+      </withRouter>
     </Router>
   );
-}
+};
 
-export default App;
-
-
+export default withRouter(App);

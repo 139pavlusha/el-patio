@@ -1,6 +1,6 @@
 import React from 'react';
 import './bakery.scss';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import {SlideWrapper} from './style';
 
 import BakeryList from './BakeryList/bakery-list';
