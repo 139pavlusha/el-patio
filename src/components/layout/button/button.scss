@@ -15,4 +15,13 @@
   &:hover {
     background: linear-gradient(#F8AB11, #7b560a);
   }
+
+  &:active, &:visited, &:focus {
+    border: none;
+    outline: none;
+  }
+
+  &:active {
+    background: #7b560a;
+  }
 }
