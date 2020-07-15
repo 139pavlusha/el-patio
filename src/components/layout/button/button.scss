@@ -1,20 +1,28 @@
+@import "../../../index";
+
 .button {
   width: 315px;
   height: 50px;
   color: #fff;
-  background-color: #F8AB11;
+  background-color: $orange;
   text-transform: uppercase;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: $Josefin Sans;
   font-weight: bold;
   font-size: 22px;
-  // text-align: center;
+  border-radius: 2px;
   padding-top: 5px;
   border: none;
   cursor: pointer;
 
   &:hover {
-    background: linear-gradient(#F8AB11, #7b560a);
+    background: linear-gradient($orange, #7b560a);
   }
+
+  @media (max-width: $desktop) {
+    width: 220px;
+    height: 48px;
+  }
+<<<<<<< HEAD
 
   &:active, &:visited, &:focus {
     border: none;
@@ -25,3 +33,6 @@
     background: #7b560a;
   }
 }
+=======
+}
+>>>>>>> f0548c6836410589ad24a1d310ad1b37dae0ab14

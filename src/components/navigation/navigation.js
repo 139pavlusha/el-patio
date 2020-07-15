@@ -14,6 +14,11 @@ export default class Navigation extends Component {
   ];
   render() {
     return (
+      <div>
+        {/* <input type="checkbox" id="menu" className="navigation__input"/>
+       <label for="menu" className="navigation__menu">
+        <i className="burger-menu"><span></span></i>
+       </label> */}
       <div className="navigation">
         <ul className="navigation__list">
           {this.menu.map((item) => {
@@ -22,6 +27,7 @@ export default class Navigation extends Component {
             );
           })}
         </ul>
+      </div>
       </div>
     );
   }
