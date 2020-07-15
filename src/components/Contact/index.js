@@ -39,6 +39,8 @@ function Contact() {
         </li>
       </ul>
       </div>
+      <div className="contacts__formBlock" ></div>
+      <div className="contacts__background" ></div>
     </section>
   );
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.scss";
 
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, withRouter, Redirect } from "react-router-dom";
 
 import Navigation from "../navigation/navigation";
 import Footer from "../footer/footer";
@@ -12,9 +12,9 @@ import Catering from "../Catering";
 import Market from "../Market";
 import Bakery from "../Bakery";
 import Contact from "../Contact";
-import ScrollToTop from "./ScrollToTop"
+import ScrollToTop from "./ScrollToTop";
 
-function App() {
+const App = (props) => {
   return (
     <Router>
       <div className="app">
@@ -31,8 +31,6 @@ function App() {
       </div>
     </Router>
   );
-}
+};
 
-export default App;
-
-
+export default withRouter(App);
