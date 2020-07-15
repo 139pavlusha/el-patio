@@ -1,29 +1,11 @@
-@mixin size($width, $heigth: $width) {
-  width: $width;
-  height: $heigth;
-}
-
-@mixin pos($pos: absolute, $t: false, $r: false, $b: false, $l: false, $z: false) {
-	position: $pos;
-	@if $t { top: $t; }
-	@if $r { right: $r; }
-	@if $b { bottom: $b; }
-	@if $l { left: $l; }
-	@if $z { z-index: $z; }
-}
-
-* {
-  box-sizing: border-box;
-}
+@import "../../index";
 
 .bakery {
-  color: #706E6E;
+  color: $grey;
   width: 100%;
-  // height: max-content;
   padding: 200px 200px 100px;
   position: relative;
-  // overflow: hidden;
-  font-family: 'Josefin', sans-serif;
+  font-family: $Josefin;
 
   &__title {
     padding-bottom: 100px;
@@ -31,7 +13,7 @@
 
   &__bg {
     position: absolute;
-    
+
     &--1 {
       @include size(300px, 400px);
       @include pos($t: 80px, $l: 100px);

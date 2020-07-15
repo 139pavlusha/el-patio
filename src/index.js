@@ -9,6 +9,7 @@ import Spiner from "./components/spinner/spiner";
 
 import "./css/reset.css";
 import "./css/bootstrap-grid.min.css";
+import "./index.scss"
 
 ReactDOM.render(
   <React.StrictMode>

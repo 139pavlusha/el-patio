@@ -19,8 +19,9 @@ const App = (props) => {
     <Router>
       <div className="app">
       <ScrollToTop />
+       {/* {props.location.pathname !== "/contact" && <Footer />} */}
         <Navigation />
-        <Route exact path="/" render={() => <Home />} />
+        <Route exact path="/" render={() => (<Redirect to="/Main" />)} />
         <Route path="/main" render={() => <Home />} />
         <Route path="/menu" render={() => <Menu />} />
         <Route path="/bakery" render={() => <Bakery />} />
