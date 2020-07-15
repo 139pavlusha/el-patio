@@ -16,8 +16,7 @@ import ScrollToTop from "./ScrollToTop";
 const App = (props) => {
   return (
     <Router>
-      <withRouter>
-        <div className="app">
+            <div className="app">
           <ScrollToTop />
           {/* {props.location.pathname !== "/contact" && <Footer />} */}
 
@@ -28,11 +27,10 @@ const App = (props) => {
           <Route path="/bakery" render={() => <Bakery />} />
           <Route path="/catering" render={() => <Catering />} />
           {/* <Route path="/market" render={() => <Markets />} /> */}
-          {/* <Footer /> */}
+          <Footer />
           <Route path="/contact" render={() => <Contact />} />
         </div>
-      </withRouter>
-    </Router>
+          </Router>
   );
 };
 
