@@ -14,7 +14,8 @@ import Stars from '../../layout/stars/stars';
 
 function Wines() {
   return(
-      <section className="market__wines wines">
+      <section className="market__wines wines" id="wines">
+        <div className="market-frame"></div>
         <div className="wines__content">
           <div className="wines__title">
           <Title slogan="Nuestros vinos" title="El Patio wines" />
