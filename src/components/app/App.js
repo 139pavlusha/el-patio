@@ -9,6 +9,7 @@ import Footer from "../footer/footer";
 import Home from "../Home";
 import Menu from "../Menu";
 import Catering from "../Catering";
+import Market from "../Market";
 import Bakery from "../Bakery";
 import Contact from "../Contact";
 import ScrollToTop from "./ScrollToTop";
@@ -16,21 +17,20 @@ import ScrollToTop from "./ScrollToTop";
 const App = (props) => {
   return (
     <Router>
-            <div className="app">
-          <ScrollToTop />
-          {/* {props.location.pathname !== "/contact" && <Footer />} */}
-
-          <Navigation />
-          <Route exact path="/" render={() => (<Redirect to="/main" />)} /> 
-          <Route path="/main" render={() => <Home />} />
-          <Route path="/menu" render={() => <Menu />} />
-          <Route path="/bakery" render={() => <Bakery />} />
-          <Route path="/catering" render={() => <Catering />} />
-          {/* <Route path="/market" render={() => <Markets />} /> */}
-          <Footer />
-          <Route path="/contact" render={() => <Contact />} />
-        </div>
-          </Router>
+      <div className="app">
+      <ScrollToTop />
+       {/* {props.location.pathname !== "/contact" && <Footer />} */}
+        <Navigation />
+        <Route exact path="/" render={() => <Home />} />
+        <Route path="/main" render={() => <Home />} />
+        <Route path="/menu" render={() => <Menu />} />
+        <Route path="/bakery" render={() => <Bakery />} />
+        <Route path="/catering" render={() => <Catering />} />
+        <Route path="/market" render={() => <Market />} />
+        <Route path="/contact" render={() => <Contact />} />
+        <Footer />
+      </div>
+    </Router>
   );
 };
 

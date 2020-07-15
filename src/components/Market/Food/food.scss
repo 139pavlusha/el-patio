@@ -1,0 +1,39 @@
+.food {
+  width: 100%;
+  color: #706E6E;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 0 100px;
+    position: relative;
+    overflow-x: hidden;
+
+    &::before {
+      content: '';
+      background: url(./images/cookies.png) no-repeat top center;
+      background-size: contain;
+      position: absolute;
+      top: 100px;
+      left: -200px;
+      width: 540px;
+      height: 530px;
+    }
+
+    &::after {
+      content: '';
+      background: url(./images/caramel.png) no-repeat top center;
+      background-size: contain;
+      position: absolute;
+      top: 100px;
+      right: -200px;
+      width: 530px;
+      height: 535px;
+    }
+  }
+
+  &__title {
+    padding-bottom: 30px;
+  }
+}

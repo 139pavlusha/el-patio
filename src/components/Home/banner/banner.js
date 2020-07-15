@@ -1,5 +1,6 @@
 import React from 'react';
 import './banner.scss';
+import { Link } from "react-router-dom";
 
 import BigTitle from '../../layout/big-title/big-title'
 import Button from '../../layout/button/button'
