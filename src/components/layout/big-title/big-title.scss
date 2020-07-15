@@ -1,34 +1,56 @@
+@import "../../../index";
+
 .big-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  
-    &__slogan {
-      font-family: 'Lovers Quarrel', sans-serif;
-      text-align: center;
-      color: #F8AB11;
-      font-size: 250px;
-      line-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-      @media (max-width: 1600px) {
-        font-size: 200px;
-        line-height: 100px;
-      }
-    }
-  
-    &__name {
-      font-family: 'Josefin Sans', sans-serif;
-      font-weight: bold;
-      font-size: 100px;
+  &__slogan {
+    font-family: $Lovers;
+    text-align: center;
+    color: $orange;
+    font-size: 250px;
+    line-height: 280px;
+
+    @media (max-width: $desktop) {
+      font-size: 200px;
       line-height: 100px;
-      text-align: center;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      color: #ffffff;
+    }
 
-      @media (max-width: 1600px) {
-        font-size: 80px;
-        line-height: 80px;
-      }
+    @media (max-width: $mobile) {
+      font-size: 150px;
+      line-height: 80px;
+    }
+
+    @media (max-width: $mobile-portrait) {
+      font-size: 80px;
+      line-height: 90px;
     }
   }
+
+  &__name {
+    font-family: $Josefin;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 100px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $white;
+
+    @media (max-width: $desktop) {
+      font-size: 80px;
+      line-height: 80px;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 30px;
+      line-height: 60px;
+    }
+
+    @media (max-width: $mobile-portrait) {
+      font-size: 22px;
+      line-height: 22px;
+    }
+  }
+}
