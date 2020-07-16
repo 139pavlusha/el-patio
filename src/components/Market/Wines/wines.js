@@ -26,8 +26,8 @@ function Wines() {
             Argentina's industry produces great wine from a big variety of grapes, but its truly identity comes from Malbec and Torrontes, they are the wonderful result of Argentina's diverse landscapes, great soil and natural richness." 
           />
           <WinesSlider wines={wines} />
-          <Footer/>
         </div>
+          <Footer/>
         
         
       </section>

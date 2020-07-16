@@ -28,8 +28,8 @@ function Food() {
           <Description desc="With our great variety of products, you can now share with your family and friends a genuine piece of Argentina. Try some of the finest dulce de leche in the world or experience the popularity of yerba mate. You can also find the traditional mates (goure), bombillas (straws) and thermos for your mate needs. " 
           />
           <FoodSlider market={market} />
+          </div>
           <Footer/>
-        </div>
       </section>
   )
 }
