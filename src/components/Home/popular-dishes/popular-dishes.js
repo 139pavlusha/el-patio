@@ -22,7 +22,7 @@ function PopularDishes() {
           <div className="knife"></div>
           <ul className="menu-type__list">
             <li className="menu-type__item"><a href="#">Lunch Menu</a></li><span>/</span>
-            <li className="menu-type__item"><a href="#">Dinner Menu</a></li>
+            {/* <li className="menu-type__item"><a href="#">Dinner Menu</a></li> */}
           </ul>
 
           <div className="dishes">

@@ -7,7 +7,7 @@ class Dish extends Component {
 		return (
 
 			<div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 dish ">
-				<img className="dish__img" src={require(`./images/${dishes.id}.png`)}/>
+				{/* <img className="dish__img" src={require(`./images/${dishes.id}.png`)}/> */}
 				<div className="dish__info">
 					<h3 className="dish__title">{dishes.dishName}</h3>
 					<p className="dish__desc">{dishes.dishDesc}</p>

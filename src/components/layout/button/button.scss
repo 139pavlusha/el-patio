@@ -12,10 +12,14 @@
   border-radius: 2px;
   padding-top: 5px;
   border: none;
+  outline: none;
   cursor: pointer;
 
-  &:hover {
-    background: linear-gradient($orange, #7b560a);
+  &:hover, &:active {
+    color: #F8AB11;
+    outline: none;
+    background: #fff;
+    border: 2px solid #F8AB11;
   }
 
   @media (max-width: $desktop) {
@@ -23,12 +27,12 @@
     height: 45px;
   }
 
-  &:active, &:visited, &:focus {
-    border: none;
-    outline: none;
-  }
+  // &:active, &:visited, &:focus {
+  //   border: none;
+  //   outline: none;
+  // }
 
-  &:active {
-    background: #7b560a;
-  }
+  // &:active {
+  //   background: #7b560a;
+  // }
 }

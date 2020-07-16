@@ -65,6 +65,11 @@
     }
   }
 
+  & .button:hover, & .button:active {
+    background: linear-gradient(#F8AB11, #7b560a);
+    border: none;
+    color: #fff;
+  }
 }
 
 .market__navigation {
