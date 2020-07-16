@@ -10,7 +10,7 @@
     color: #706E6E;
 
     @media (max-width: $mobile) {
-      padding: 50px 100px;
+      display: none;
     }
 
     @media (max-width: $mobile-portrait) {

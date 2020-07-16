@@ -46,6 +46,10 @@
         margin-left: 80px;
         width: 100px;
         border-radius: 50%;
+
+        @media (max-width: $mobile) {
+            margin-left: 10px;
+        }
     }
 
     &__info {
@@ -71,6 +75,10 @@
         margin-top: 10px;
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: $mobile) {
+            display: none;
+        }
     }
 
     & .stars__item {
