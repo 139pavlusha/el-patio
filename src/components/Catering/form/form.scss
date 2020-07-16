@@ -1,3 +1,5 @@
+@import "../../../index";
+
 .form {
   width: 100%;
   height: fit-content;
@@ -10,6 +12,14 @@
   font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
   position: relative;
+
+  @media (max-width: $desktop) {
+    padding: 50px 0;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 30px 0 50px;
+  }
 
   &::before {
     content: '';
@@ -25,6 +35,10 @@
     @media (max-width: 1600px) {
       width: 400px;
       height: 400px;
+    }
+
+    @media (max-width: $desktop) {
+      display: none;
     }
   }
 
@@ -43,19 +57,30 @@
       width: 400px;
       height: 400px;
     }
+
+    @media (max-width: $desktop) {
+      display: none;
+    }
   }
 
   &__form {
     width: 680px;
     padding-top: 50px;
 
+    @media (max-width: $mobile) {
+      width: 90%;
+    }
+
     & input {
         font-size: 16px;
         color: #706E6E;
+        border: 1px solid #706E6E;
     }
 
-    & input:active, & input:focus {
+    & input:active, & input:focus, & input:active input::placeholder, & input:focus input::placeholder {
       outline-color: #F8AB11;
+      border-color: #F8AB11;
+      color: #F8AB11;
     }
   }
 
@@ -63,12 +88,22 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 20px;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__name, &__email {
     width: 330px;
     height: 50px;
     padding: 10px;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      margin-bottom: 15px;
+    }
   }
 
   &__text {
@@ -76,6 +111,11 @@
     height: 130px;
     margin-bottom: 30px;
     padding: 10px;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      margin-bottom: 15px;
+    }
   }
 
   &__button {

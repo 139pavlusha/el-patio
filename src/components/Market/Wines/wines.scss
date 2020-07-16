@@ -73,4 +73,8 @@
   position: absolute;
   top: -295px;
   left: 0;
+
+  @media (max-width: $mobile) {
+    display: none;
+  }
 }

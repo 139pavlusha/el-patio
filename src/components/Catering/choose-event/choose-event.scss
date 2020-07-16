@@ -1,3 +1,5 @@
+@import "../../../index";
+
 .choose-event {
   width: 100%;
   height: fit-content;
@@ -7,7 +9,7 @@
   color: #706E6E;
   position: relative;
   z-index: 1;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: $JosefinSans;
 
   &::before {
     content: '';
@@ -23,6 +25,10 @@
     @media (max-width: 1600px) {
       width: 450px;
       height: 800px;
+    }
+
+    @media (max-width: $desktop) {
+      display: none;
     }
   }
 
@@ -42,6 +48,10 @@
       width: 301px;
       height: 918px;
     }
+
+    @media (max-width: $desktop) {
+      display: none;
+    }
   }
 
   
@@ -51,14 +61,6 @@
     color: white;
     margin-bottom: 30px;
     transition: .5s;
-    
-    // &:hover > * {
-    //   color: #F8AB11;
-    // }
-
-    // &:hover > .choose-event__item::after {
-    //   display: none;
-    // }
   }
 
   &__title {
@@ -74,13 +76,19 @@
     @media (max-width: 1600px) {
       width: 1000px;
     }
+
+    @media (max-width: $desktop) {
+      margin-bottom: 20px;
+      justify-content: space-evenly;
+      width: 90%;
+    }
   }
   
   &__item {
     color: white;
     width: 400px;
     height: 530px;
-    background-size: cover;
+    background-size: contain;
     position: relative;
     display: flex;
     justify-content: center;
@@ -92,32 +100,64 @@
       height: 400px;
     }
 
+    @media (max-width: $mobile) {
+      @include size(200px);
+    }
+
+    @media (max-width: $mobile-portrait) {
+      @include size(110px);
+    }
+
     &--corp {
       background: linear-gradient(#09090940, #09090940), url(../choose-event/images/corporate.png) no-repeat top center;
+
+      @media (max-width: $desktop) {
+        margin-top: 10px;
+      }
     }
 
     &--bbq {
       background: linear-gradient(#09090940, #09090940), url(../choose-event/images/bbq.png) no-repeat top center;
       margin-top: 20px;
+
+      @media (max-width: $desktop) {
+        margin-top: 10px;
+      }
     }
 
     &--wed {
       background: linear-gradient(#09090940, #09090940), url(../choose-event/images/wedding.png) no-repeat top center;
       margin-top: 40px;
+
+      @media (max-width: $desktop) {
+        margin-top: 10px;
+      }
     }
 
     &--birthday {
       background: linear-gradient(#09090940, #09090940), url(../choose-event/images/birthday.png) no-repeat top center;
+
+      @media (max-width: $desktop) {
+        margin-top: 10px;
+      }
     }
 
     &--party {
       background: linear-gradient(#09090940, #09090940), url(../choose-event/images/party.png) no-repeat top center;
       margin-top: 20px;
+
+      @media (max-width: $desktop) {
+        margin-top: 10px;
+      }
     }
 
     &--other {
       background: linear-gradient(#09090940, #09090940), url(../choose-event/images/other.png) no-repeat top center;
       margin-top: 40px;
+
+      @media (max-width: $desktop) {
+        margin-top: 10px;
+      }
     }
   }
   

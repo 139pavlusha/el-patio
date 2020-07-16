@@ -9,7 +9,7 @@ import Footer from "../footer/footer";
 
 function Catering() {
   return (
-    <div className="Home">
+    <div className="catering">
       <CateringBanner />
       <ChooseEvent />
       <PorQue />

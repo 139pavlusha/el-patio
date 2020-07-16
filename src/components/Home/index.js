@@ -11,7 +11,7 @@ import Footer from "../footer/footer";
 
 function Home() {
   return (
-    <div className="Home">
+    <div className="home">
       <Banner />
       <TrueCuisine />
       <PopularDishes />

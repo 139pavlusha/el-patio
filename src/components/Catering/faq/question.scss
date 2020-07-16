@@ -1,6 +1,7 @@
+@import "../../../index";
+
 .question {
-  width: 320px;
-  height: 200px;
+  @include size(320px, 200px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,6 +12,10 @@
   color: #706E6E;
   cursor: pointer;
   font-family: 'Josefin Sans', sans-serif;
+
+  & .question__img {
+    z-index: 0;
+  }
 
   &:first-child .question__img {
     background: url(../faq/images/booking.png) no-repeat top center;
@@ -58,8 +63,15 @@
   }
 
   @media (max-width: 1600px) {
-    width: 240px;
-    height: 150px;
+    @include size(240px, 150px);
+  }
+
+  @media (max-width: $desktop) {
+    margin: 10px;
+  }
+
+  @media (max-width: $mobile-portrait) {
+    @include size(90%);
   }
 
   &:hover {
@@ -67,13 +79,12 @@
     border: 1px solid #F8AB11;
   }
 
-  &:hover .question__answer {
-    width: 400px;
-    height: 300px;
+  &:hover .question__answer, &:active .question__answer {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    // z-index: 100;
   }
 
   &__wrap {
@@ -102,6 +113,21 @@
     z-index: 20;  
     font-size: 20px;
     padding: 20px;
+    width: 400px;
+    height: 300px;
+
+    @media (max-width: $mobile) {
+      @include pos($b: -100px, $l: 0);
+      @include size(150%);
+      transform: translateX(-18%);
+      font-size: 14px;
+    }
+
+    @media (max-width: $mobile) {
+      @include size(120%, 200%);
+      transform: translateX(-10%);
+      font-size: 14px;
+    }
   }
 
   &__img {
