@@ -90,6 +90,26 @@
         background-color: #F8AB11;
         height: 300px;
     }
+
+    &__horizontal-line-2 {
+        position: absolute;
+        z-index: -1;
+        width: 1px;
+        top: 22px;
+        left: 11px;
+        background-color: #F8AB11;
+        height: 180px;
+    }
+
+    &__horizontal-line-3 {
+        position: absolute;
+        z-index: -1;
+        width: 1px;
+        top: 22px;
+        left: 11px;
+        background-color: #F8AB11;
+        height: 180px;
+    }
 }
 
 .menu-underscore {
