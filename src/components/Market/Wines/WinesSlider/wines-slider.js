@@ -15,7 +15,25 @@ export default function WinesSlider ({wines}) {
     slidesToShow: 4,
     slidesToScroll: 4,
     arrows: true,
-    className: "slides"
+    className: "slides",
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false
+        }
+      }
+      ]
   }
 
       const winesElements = wines.map(item =>

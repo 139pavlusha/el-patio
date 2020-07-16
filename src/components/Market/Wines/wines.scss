@@ -1,3 +1,5 @@
+@import "../../../index";
+
 .wines {
   width: 100%;
   color: #706E6E;
@@ -11,6 +13,10 @@
     padding: 150px 0 100px;
     position: relative;
 
+    @media (max-width: $desktop) {
+      padding: 50px 0;
+    }
+
     &::before {
       content: '';
       background: url(./images/cork.png) no-repeat bottom center;
@@ -20,6 +26,14 @@
       left: 0;
       width: 450px;
       height: 300px;
+
+      @media (max-width: 1300px) {
+        @include size(320px, 240px);
+      }
+
+      @media (max-width: $desktop) {
+        display: none;
+      }
     }
 
     &::after {
@@ -31,11 +45,23 @@
       right: 0;
       width: 395px;
       height: 385px;
+
+      @media (max-width: 1300px) {
+        @include size(320px);
+      }
+
+      @media (max-width: $desktop) {
+        display: none;
+      }
     }
   }
 
   &__title {
     padding-bottom: 30px;
+
+    @media (max-width: $desktop) {
+      padding-bottom: 0px;
+    }
   }
 }
 

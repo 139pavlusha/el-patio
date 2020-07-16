@@ -1,3 +1,5 @@
+@import "../../../index";
+
 .food {
   width: 100%;
   color: #706E6E;
@@ -12,6 +14,10 @@
     position: relative;
     overflow-x: hidden;
 
+    @media (max-width: $desktop) {
+      padding: 50px 0;
+    }
+
     &::before {
       content: '';
       background: url(./images/cookies.png) no-repeat top center;
@@ -21,6 +27,15 @@
       left: -200px;
       width: 540px;
       height: 530px;
+
+      @media (max-width: 1300px) {
+        @include size(340px);
+        @include pos($t: 250px, $l: -100px);
+      }
+
+      @media (max-width: $desktop) {
+        display: none;
+      }
     }
 
     &::after {
@@ -32,6 +47,15 @@
       right: -200px;
       width: 530px;
       height: 535px;
+
+      @media (max-width: 1300px) {
+        @include size(320px);
+        @include pos($t: 250px, $r: -150px);
+      }
+
+      @media (max-width: $desktop) {
+        display: none;
+      }
     }
   }
 
