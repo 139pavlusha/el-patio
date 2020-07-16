@@ -10,12 +10,6 @@
   margin: auto;
 
   @media (max-width: $mobile) {
-    max-width: 500px;
-  }
-
-  @media (max-width: $mobile-portrait) {
-    max-width: 300px;
-    font-size: 12px;
-    line-height: 14px;
+    max-width: 90%;
   }
 }

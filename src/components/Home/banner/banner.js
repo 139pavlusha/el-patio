@@ -16,8 +16,8 @@ const Banner = () => {
             <BigTitle slogan="Bienvenido a" title="El Patio International"/>
           </div>
           <div className="banner__buttons">
-            <div className="banner__button"><Button button="book a table" /></div>
-            <div className="banner__button"><Button button="discover menu" /></div>
+            <a href="#reservation" className="banner__button"><Button button="book a table" /></a>
+            <a href="#popular-dishes" className="banner__button"><Button button="discover menu" /></a>
           </div>
         </div>
       </div>
