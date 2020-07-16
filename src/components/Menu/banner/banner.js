@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { Component } from "react";
+import { NavHashLink as NavLink } from 'react-router-hash-link';
 import './banner.scss';
 
 import BigTitle from '../../layout/big-title/big-title'
 import Button from '../../layout/button/button'
 
-const MenuBanner = () => {
+export default class MenuBanner extends Component {
+
+  render() {
   return (
     <header className="menu-banner">
 
@@ -15,9 +18,9 @@ const MenuBanner = () => {
             <BigTitle slogan="Delicioso sueño" title="menu"/>
           </div>
           <div className="menu-banner__buttons">
-            <div className="menu-banner__button"><Button button="book a table" /></div>
+            <NavLink className="menu-banner__button" smooth to="/main#reservation"><Button button="book a table" /></NavLink>
             
-            <div className="menu-banner__button"><Button button="make an order" /></div>
+            <NavLink className="menu-banner__button" smooth to="/catering#event"><Button button="make an order" /></NavLink>
           </div>
 
         </div>
@@ -26,5 +29,4 @@ const MenuBanner = () => {
 
   );
 }
-
-export default MenuBanner;
+}

@@ -175,7 +175,7 @@ export default class ChooseEvent extends Component {
   render() {
 
     return (
-      <div className="choose-event" >
+      <div className="choose-event" id="event">
         <div className="choose-event__title">
           <Title slogan="Choose your event" title="complete your order in 5 steps" />
         </div>

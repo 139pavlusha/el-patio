@@ -89,7 +89,7 @@ export default class MenuContent extends Component {
           </ul>
         </div>
 
-        <div className="menu-container">
+        <div className="menu-container" >
           <div className="menu-container__filter">
             <ul className="menu-container__list">
               <li onClick={this.clickSandwich} className={'menu-container__item ' + this.state.classNameSandwich}>
