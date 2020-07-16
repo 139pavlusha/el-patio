@@ -235,13 +235,13 @@ export default class MenuContent extends Component {
 
           <ShowDishes menu={this.state.menu} filter={this.state.filter} />
 
-          <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12 dish --absolute">
+          {/* <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12 dish --absolute">
             <div className="dish__info">
               <h3 className="dish__title">medialuna rellena</h3>
               <p className="dish__desc">Croissant with Egg, melted Cheese&Ham</p>
               <p className="dish__price"><span>Price: $4.60</span></p>
             </div>
-          </div>
+          </div> */}
         </div>
 
 
