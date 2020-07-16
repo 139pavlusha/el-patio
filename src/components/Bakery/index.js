@@ -3,7 +3,7 @@ import './bakery.scss';
 
 import BakeryList from './BakeryList/bakery-list';
 import baking from './baking';
-
+import Footer from "../footer/footer";
 import Title from '../layout/title/title';
 
 
@@ -18,6 +18,7 @@ function Bakery() {
         <span className="bakery__bg--4"></span>
         <span className="bakery__bg--5"></span>
         <span className="bakery__bg--6"></span>
+        {/* <Footer /> */}
         
     </div>
   )

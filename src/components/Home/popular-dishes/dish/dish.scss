@@ -1,8 +1,4 @@
-@mixin size($width, $heigth: $width) {
-    width: $width;
-    height: $heigth;
-}
-
+@import "../../../../index";
 
 .dish {
     background: url(../dish/images/1.png) no-repeat center;
@@ -15,6 +11,15 @@
         @include size(300px);
     }
 
+    @media (max-width: $mobile) {
+        height: 250px;
+        width: 250px;
+    }
+
+    @media (max-width: $mobile-portrait) {
+        height: 300px;
+        width: 300px;
+    }
 
     &__info {
         font-family: 'Josefin Sans', sans-serif;

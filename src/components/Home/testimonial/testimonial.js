@@ -86,8 +86,15 @@ export default class App extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: true,
-      className: "slides"
-    }
+      className: "slides",
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            arrows: false
+          }}]
+        }
+    
 
     return (
       <section class="testimonials" id="testimonials">

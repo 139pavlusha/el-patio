@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './show-dishes.scss'
 
 import dishes from '../../../Home/popular-dishes/dish/menu-servise';
+import DishItem from './dish-item/dish-item';
 
 export default class ShowDishes extends Component {
 
@@ -12,9 +13,10 @@ export default class ShowDishes extends Component {
         for (let i = 0; i < dishes.length; i++) {
             let dish = dishes[i];
             if (dish.dishFor === menu)
-                arr.push(
-                    <p>{dish.dishName}</p>
-                );
+                if (dish.dishType === filter || filter === '')
+                    arr.push(
+                        <DishItem dishName={dish.dishName} dishDesc={dish.dishDesc} price={dish.price} />
+                    );
         }
 
         return arr;
@@ -28,6 +30,7 @@ export default class ShowDishes extends Component {
         return (
             <div className="show-dishes__container">
                 <ul className="show-dishes__list">
+                    <span className="show-dishes__prices">Regular / Large</span>
                     {this.showDishes()}
                 </ul>
             </div>

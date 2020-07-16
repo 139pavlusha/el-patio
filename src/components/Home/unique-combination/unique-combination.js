@@ -13,7 +13,7 @@ function UniqueCombination() {
       <section className="unique-combination">
 		    <div className="wrap">
 			    <div className="row unique-combination__content">
-				    <div className="col-5 unique-combination__content-box">
+				    <div className="col-lg-5 col-md-12 unique-combination__content-box">
               <Title slogan="Disfruta de la" title="Unique combination"/>
                 <Stars />
                 <Description 

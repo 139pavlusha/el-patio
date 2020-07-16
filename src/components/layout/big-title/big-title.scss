@@ -10,11 +10,11 @@
     text-align: center;
     color: $orange;
     font-size: 250px;
-    line-height: 250px;
+    line-height: 150px;
 
-    @media (max-width: $desktop) {
+    @media (max-width: 1600px) {
       font-size: 200px;
-      line-height: 100px;
+      line-height: 80px;
     }
 
     @media (max-width: $mobile) {
@@ -29,7 +29,7 @@
   }
 
   &__name {
-    font-family: $Josefin;
+    font-family: $JosefinSans;
     font-weight: bold;
     font-size: 100px;
     line-height: 100px;
@@ -38,14 +38,18 @@
     text-transform: uppercase;
     color: $white;
 
-    @media (max-width: $desktop) {
+    @media (max-width: 1600px) {
       font-size: 80px;
       line-height: 80px;
     }
 
+    @media (max-width: $desktop) {
+      font-size: 50px;
+    }
+
     @media (max-width: $mobile) {
       font-size: 30px;
-      line-height: 60px;
+      line-height: 40px;
     }
 
     @media (max-width: $mobile-portrait) {
