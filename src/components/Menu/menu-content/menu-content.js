@@ -89,7 +89,7 @@ export default class MenuContent extends Component {
   }
   clickDessert = () => {
     this.clearFilter();
-    this.setState({ classNameDessert: 'menu-choose', filter: 'Drinks' });
+    this.setState({ classNameDessert: 'menu-choose', filter: 'desserts&drinks' });
   }
   clickGrill = () => {
     this.clearFilter();
