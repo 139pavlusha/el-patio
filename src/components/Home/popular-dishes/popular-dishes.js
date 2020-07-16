@@ -1,5 +1,6 @@
 import React from 'react';
 import './popular-dishes.scss';
+import { NavHashLink as NavLink } from "react-router-hash-link";
 
 import Title from '../../layout/title/title'
 import Button from '../../layout/button/button'
@@ -36,7 +37,7 @@ function PopularDishes() {
           </div>
 
         </div>
-        <div className="popular-dishes__button"><Button button="open the full menu" /> </div>
+        <NavLink className="popular-dishes__button" smooth to="/menu#menu"><Button button="open the full menu" /> </NavLink>
       </section>
     </div>  
   );
