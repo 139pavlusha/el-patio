@@ -2,6 +2,20 @@
 
 .dish {
 
+    &__wrap{
+        @include size(300px);
+        border: 15px solid white;
+        background-size: cover;
+
+        @media (max-width: $desktop) {
+            @include size(200px);
+        }
+
+        @media (min-width: 1600px) {
+            @include size(400px);
+        }
+    }
+
     &__img{
         @include size(90%);
         @include pos($t:50%, $l:50%);
@@ -12,6 +26,7 @@
     max-width: 300px;
     position: relative;
     margin-bottom: 20px;
+    background: none;
     // padding: 20px;
     // margin: 10px;
 
@@ -35,10 +50,10 @@
         position: absolute;
         border: 2px solid #ffffff;
         padding: 10px;
-        @include size(80%);
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        @include size(70%);
+        left: 0;
+        top: 4%;
+        // transform: translate(-50%, -50%);
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
