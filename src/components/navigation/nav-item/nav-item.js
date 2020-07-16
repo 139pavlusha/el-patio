@@ -6,8 +6,8 @@ export default class NavItem extends Component {
   render() {
     let { itemName, url } = this.props;
     return (
-      <li className="navigation__item">
-        <NavLink  activeStyle={{ color: '#F8AB11' }} to={url} >
+      <li className="navmenu__item">
+        <NavLink className="navmenu__link"  activeStyle={{ color: '#F8AB11' }} to={url} >
         {itemName}
         </NavLink>
       </li>
