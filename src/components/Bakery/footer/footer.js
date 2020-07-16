@@ -1,15 +1,11 @@
 import React from "react";
-import Title from "../layout/title/title";
-import Form from "./Form/Form";
-import "./Contact.scss";
+import "./footer.scss";
+import "../../../fonts/font-awesome.min.css";
 
-function Contact() {
+function Footer() {
   return (
-    <section className="contacts">
-      <div className="contacts__container">
-        <Title slogan="Contact us" title="We are happy to know your opinion" />
-        <Form />
-        <div className="footer__content contacts__footer">
+    <footer className="footer" id="footer">
+      <div className="footer__content">
         <ul className="footer__contact contact">
           <div className="contact__wrap">
             <h5 className="contact__title">Contact us</h5>
@@ -25,8 +21,8 @@ function Contact() {
           </li>
           </div>
           <div className="contact__bottom">
-            <li className="contact__item"><a href="tel:1 301-231-9225">1 301-231-9225</a></li>
-            <li className="contact__item"><a href="mailto:elpatiointernational@gmail.com">elpatiointernational@gmail.com</a></li>
+            <li className="contact__item">1 301-231-9225</li>
+            <li className="contact__item">elpatiointernational@gmail.com</li>
           </div>
         </ul>
 
@@ -48,11 +44,8 @@ function Contact() {
           </ul>
         </div>
       </div>
-        <div className="contacts__formBlock" ></div>
-        <div className="contacts__background" ></div>
-      </div>
-    </section>
+    </footer>
   );
 }
 
-export default Contact;
+export default Footer;
