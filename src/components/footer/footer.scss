@@ -1,4 +1,4 @@
-@import "../../index";
+@import "../../index.scss";
 
 .footer {
   background: url(./images/footer.png) no-repeat;
@@ -7,7 +7,7 @@
   height: 430px;
   padding-top: 100px;
   border-radius: 50%/100px 100px 0 0;
-  font-family: $Josefin Sans;
+  font-family: $JosefinSans;
   font-weight: 300;
   display: flex;
   justify-content: center;
@@ -48,7 +48,7 @@
       @include pos($t: 50%, $r: 0);
       @include size(50px);
       border-radius: 50%;
-      border: 1px solid #ffffff;
+      border: 1px solid $white;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -60,7 +60,7 @@
     font-size: 22px;
     line-height: 25px;
     text-transform: uppercase;
-    color: #f8ab11;
+    color: $orange;
     padding-bottom: 20px;
   }
 
@@ -69,7 +69,7 @@
     line-height: 25px;
     a {
         text-decoration: none;
-        color: #ffffff;
+        color: $white;
       }
 
     @media (max-width: $mobile) {
