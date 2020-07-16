@@ -4,11 +4,12 @@
   color: #ffffff;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
-  background: linear-gradient(#09090940, #09090940), url(./Contact-banner.png) no-repeat top center;
+  background: linear-gradient(#09090940, #09090940),
+    url(./Contact-banner.png) no-repeat top center;
   background-size: cover;
   position: relative;
 
-  @media (min-width: 1600px) {
+  @media (max-width: 1600) {
     height: 100vh;
   }
 
@@ -17,16 +18,17 @@
     height: 100%;
     margin: 0 auto;
     padding: 120px 70px 100px;
-    background: #110E0E80;
+    background: rgba(0, 0, 0, 0.4);
   }
-  
+
   & input {
     outline: none;
     border: none;
 
-    &:active, &:focus {
-      color: #F8AB11;
-      border: 2px solid #F8AB11;
+    &:active,
+    &:focus {
+      color: #f8ab11;
+      border: 2px solid #f8ab11;
     }
   }
 

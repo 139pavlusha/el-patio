@@ -3,7 +3,7 @@ import './bakery.scss';
 
 import BakeryList from './BakeryList/bakery-list';
 import baking from './baking';
-
+import Footer from "../footer/footer";
 import Title from '../layout/title/title';
 import Footer from './footer/footer';
 

@@ -5,6 +5,7 @@ import PorQue from '../Catering/por-que/por-que';
 import ChooseEvent from '../Catering/choose-event/choose-event';
 import FAQ from '../Catering/faq/faq';
 import Form from '../Catering/form/form';
+import Footer from "../footer/footer";
 
 function Catering() {
   return (
@@ -14,6 +15,7 @@ function Catering() {
       <PorQue />
       <FAQ />
       <Form />
+      <Footer />
     </div>
   )
 }

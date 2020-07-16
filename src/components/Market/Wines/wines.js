@@ -11,6 +11,7 @@ import WinesSlider from './WinesSlider/wines-slider';
 import Title from '../../layout/title/title';
 import Description from '../../layout/description/description';
 import Stars from '../../layout/stars/stars';
+import Footer from "../../footer/footer";
 
 function Wines() {
   return(
@@ -25,6 +26,7 @@ function Wines() {
             Argentina's industry produces great wine from a big variety of grapes, but its truly identity comes from Malbec and Torrontes, they are the wonderful result of Argentina's diverse landscapes, great soil and natural richness." 
           />
           <WinesSlider wines={wines} />
+          <Footer/>
         </div>
         
         

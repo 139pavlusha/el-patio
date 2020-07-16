@@ -21,8 +21,8 @@ function Footer() {
           </li>
           </div>
           <div className="contact__bottom">
-            <li className="contact__item">1 301-231-9225</li>
-            <li className="contact__item">elpatiointernational@gmail.com</li>
+            <li className="contact__item"><a href="tel:1 301-231-9225">1 301-231-9225</a></li>
+            <li className="contact__item"><a href="mailto:elpatiointernational@gmail.com">elpatiointernational@gmail.com</a></li>
           </div>
         </ul>
 

@@ -11,6 +11,7 @@ import FoodSlider from './FoodSlider/food-slider';
 import Title from '../../layout/title/title';
 import Description from '../../layout/description/description';
 import Stars from '../../layout/stars/stars';
+import Footer from "../../footer/footer";
 
 function Food() {
   return(
@@ -27,6 +28,7 @@ function Food() {
           <Description desc="With our great variety of products, you can now share with your family and friends a genuine piece of Argentina. Try some of the finest dulce de leche in the world or experience the popularity of yerba mate. You can also find the traditional mates (goure), bombillas (straws) and thermos for your mate needs. " 
           />
           <FoodSlider market={market} />
+          <Footer/>
         </div>
       </section>
   )
