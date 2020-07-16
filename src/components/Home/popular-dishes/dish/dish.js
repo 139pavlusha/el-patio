@@ -1,26 +1,21 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './dish.scss';
 
+class Dish extends Component {
+	render() {
+		const {dishes} = this.props
+		return (
 
-
-// const dishStyle = {
-// 	backgroundImage: 'url('images/Component1.png')'
-// }
-
-
-const Dish = ({ title, desc, price }) => {
-
-
-	return (
-
-		<div className="col-lg-3 col-md-6 col-sm-6 col-xs-12 dish ">
-			<div className="dish__info">
-				<h3 className="dish__title">{title}</h3>
-				<p className="dish__desc">{desc}</p>
-				<p className="dish__price"><span>Price: </span>${price}</p>
+			<div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 dish ">
+				<img className="dish__img" src={require(`./images/${dishes.id}.png`)}/>
+				<div className="dish__info">
+					<h3 className="dish__title">{dishes.dishName}</h3>
+					<p className="dish__desc">{dishes.dishDesc}</p>
+					<p className="dish__price"><span>Price: </span>${dishes.price.regular}</p>
+				</div>
 			</div>
-		</div>
-	);
+		);
+	}
 }
 
 export default Dish;

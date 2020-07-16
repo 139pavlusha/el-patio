@@ -1,6 +1,9 @@
 import React from 'react';
 import './popular-dishes.scss';
 
+import DishList from './dish-list';
+import dishes from './dish/menu-servise';
+
 import Title from '../../layout/title/title'
 import Button from '../../layout/button/button'
 import Stars from '../../layout/stars/stars'
@@ -22,17 +25,8 @@ function PopularDishes() {
             <li className="menu-type__item"><a href="#">Dinner Menu</a></li>
           </ul>
 
-          <div className="row">
-            <Dish title="Triples Surtidos"
-                  desc="Sandwich with assorted fillings"  
-                  price="4.60" />
-            <Dish />
-            <Dish />
-            <Dish />
-            <Dish />
-            <Dish />
-            <Dish />
-            <Dish />
+          <div className="dishes">
+            <DishList dishes={dishes} />
           </div>
 
         </div>
