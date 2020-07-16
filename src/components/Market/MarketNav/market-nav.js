@@ -23,7 +23,7 @@
 // }
 
 import React, { Component } from "react";
-// import { NavLink } from "react-router-dom";
+import Button from '../../layout/button/button'
 import './market-nav.scss';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 
@@ -34,10 +34,10 @@ export default class MarketNav extends Component {
     return (
       <div className="market__navigation">
         <div className="market__button button">
-          <NavLink className="button__item" smooth to="/market/wines#wines" >Wine market</NavLink>
+          <NavLink className="button__item" smooth to="/market/wines#wines" ><Button button="Wine Market" /></NavLink>
         </div>
         <div className="market__button button">
-        <NavLink className="button__item" smooth to="/market/food#food" >Food market</NavLink>
+        <NavLink className="button__item" smooth to="/market/food#food" ><Button button="Food Market" /></NavLink>
         </div>
       </div>
     );
