@@ -2,6 +2,8 @@
 
 .dish {
 
+    
+
     &__wrap{
         @include size(300px);
         border: 15px solid white;
@@ -66,10 +68,23 @@
         text-transform: uppercase;
         color: #F8AB11;
         padding-bottom: 5px;
+        color: #fff;
+    }
+
+    &__desc {
+        color: #fff;
+        @media (max-width: 900px) {
+            display: none;
+        }
     }
 
     &__price {
         padding: 15px 0;
+        color: #fff;
+
+        @media (max-width: $desktop) {
+            display: none;
+        }
     }
 
     p {
