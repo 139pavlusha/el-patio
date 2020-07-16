@@ -1,8 +1,16 @@
+@import '../../../../../index.scss';
+
 .dish-item {
     margin-bottom: 20px;
     position: relative;
 
     &__title {
+
+        @media (max-width: $mobile) {
+            font-size: 18px;
+        }
+
+        width: 75%;
         font-family: Josefin Sans;
         font-style: normal;
         font-weight: bold;
@@ -12,7 +20,12 @@
     }
 
     &__desc {
-        width: 80%;
+
+        @media (max-width: $mobile) {
+            font-size: 16px;
+        }
+
+        width: 75%;
         font-family: Josefin Sans;
         font-style: normal;
         // font-weight: bold;
@@ -22,6 +35,11 @@
     }
 
     &__price {
+
+        @media (max-width: $mobile) {
+            font-size: 18px;
+        }
+
         position: absolute;
         top: 0;
         right: -10px;

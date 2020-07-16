@@ -5,10 +5,10 @@ import dishes from '../../../Home/popular-dishes/dish/menu-servise';
 import DishItem from './dish-item/dish-item';
 
 export default class ShowDishes extends Component {
-
     showDishes = () => {
         const { menu, filter } = this.props;
         let arr = [];
+        // console.log(dishes.length);
 
         for (let i = 0; i < dishes.length; i++) {
             let dish = dishes[i];

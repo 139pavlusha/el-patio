@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import DishesNav from './dishes-nav/dishes-nav';
 import DishesList from './dishes-list/dishes-list';
 import ShowDishes from './show-dishes/show-dishes';
+import Dish from '../../Home/popular-dishes/dish/dish';
 
 import './menu-content.scss';
 import MenuNav from '../menu-nav/menu-nav';
 
 export default class MenuContent extends Component {
-
   state = {
     classNameLunch: 'menu-underscore',
     classNameDinner: '',
@@ -234,7 +234,17 @@ export default class MenuContent extends Component {
           {this.showFilter(this.state.menu)}
 
           <ShowDishes menu={this.state.menu} filter={this.state.filter} />
+
+          <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12 dish --absolute">
+            <div className="dish__info">
+              <h3 className="dish__title">medialuna rellena</h3>
+              <p className="dish__desc">Croissant with Egg, melted Cheese&Ham</p>
+              <p className="dish__price"><span>Price: $4.60</span></p>
+            </div>
+          </div>
         </div>
+
+
 
         {/* <DishesNav /> */}
         {/* <DishesList /> */}
